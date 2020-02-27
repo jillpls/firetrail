@@ -1,0 +1,299 @@
+name,stock,setting,id,years,res,stats,leads,general_skill_points,skill_points,skills,trait_points,traits,req_traits,req_skills,req_lp,req_lp_count,req_age,req_special,special,born,edition,use
+Born Peasant,Man,Peasant,101,8,3,,"Servitude, Soldier, Seafaring, Religious",3,0,,2,,,,,,,,,TRUE,BWG,TRUE
+Farmer,Man,Peasant,102,8,5,P,"Villager, Soldier, Servitude",0,8,"Farming, Mending, Animal Husbandry, Weaving, Cooking, Sewing, Firebuilding, Sing",1,Hoarding,,,,,,,,FALSE,BWG,TRUE
+Head of Household,Man,Peasant,103,15,20,M,"Villager, Soldier",0,8,"Carpentry, Hunting, Haggling, Almanac",2,,,,,2,,,,FALSE,BWG,FALSE
+Midwife,Man,Peasant,104,10,15,M,"Villager, Outcast",0,7,"Animal Husbandry, Herbalism, Midwifery, Omen-wise",2,Bedside Manner,,,"Farmer, Itinerant Priest, female LP",,,,,FALSE,BWG,FALSE
+Lazy Stayabout,Man,Peasant,105,7,3,,"Outcast, Servitude, Soldier",0,3,"Lazy-wise, Peasant-wise, Wife-wise, Work-wise",1,A Little Fat,,,,,,,,FALSE,BWG,FALSE
+Conscript,Man,Peasant,106,1,4,,"Servitude, Soldier, Outcast",0,2,"Foraging, Battle-wise, Rumor-wise",1,Flee from Battle,,,,,,,,FALSE,BWG,FALSE
+Peasant Pilgrim,Man,Peasant,107,3,4,,"Outcast, Servitude, Villager",1,3,"Doctrine, Pilgrimage-wise, Saint-wise",2,"Road Weary, Alms-Taker",,,,,,,,FALSE,BWG,FALSE
+Miller,Man,Peasant,108,7,15,,Villager,0,5,"Miller, Brewer, Mending, Carpentry",1,Lord's Favorite,,,,,,,,FALSE,BWG,FALSE
+Fisherman,Man,Peasant,109,6,5,P,"Villager, Outcast, Seafaring",0,6,"Fishing, Rigging, Knots, Mending, Cooking, Boatwright",2,Superstitious,,,,,,,,FALSE,BWG,FALSE
+Shepherd,Man,Peasant,110,4,4,P,"Villager, Outcast",0,5,"Animal Husbandry, Sing, Climbing, Flute",1,Cry Wolf,,,,,,,,FALSE,BWG,FALSE
+Wood Cutter,Man,Peasant,111,5,5,P,"Villager, Outcast",0,5,"Firebuilding, Mending, Foraging, Orienteering, Tree-wise, Tree Cutting",1,,,,,,,,,FALSE,BWG,FALSE
+Hunter,Man,Peasant,112,5,6,M+P,"Villager, Outcast, Soldier",0,7,"Hunting, Tracking, Stealthy, Cooking, Orienteering, Javelin/Bow",1,,,,,,,,,FALSE,BWG,FALSE
+Trapper,Man,Peasant,113,5,8,M+P,"Villager, Outcast, Soldier",0,6,"Trapper, Stealthy, Tracking, Cooking, Haggling, Taxidermy",1,Foul Smelling,,,,,,,,FALSE,BWG,FALSE
+Peddler,Man,Peasant,114,5,10,M,"Villager, Servitude, City, Outcast",0,7,"Mending, Sing, Haggling, Chandler, Persuasion, Inconspicuous, Falsehood",2,"Blank Stare, Glib, Eidetic Memory",,,,,,,,FALSE,BWG,FALSE
+Elder,Man,Peasant,115,15,5,M,"Villager, Outcast",0,6,"Observation, Persuasion, Ugly Truth, Peasant-wise, Local History",1,Crotchety,,,,4?,50,,,FALSE,BWG,FALSE
+Augur,Man,Peasant,116,5,10,M,"Servitude, Outcast",0,4,"Astrology, Sorcery, Falsehood, Ugly Truth, Omen-wise",2,"Disturbed, Dreamer, Cassandra, Touch of Ages",,,"Midwife, Country Wife",,,female and max 3 lps,,FALSE,BWG,FALSE
+Itinerant Priest,Man,Peasant,117,6,8,M,"Villager, Outcast, City, Religious",0,7,"Oratory, Suasion, Chandler, Riding, Write, Read, Doctrine",2,"Dusty, Faithful",,,Acolyte,,,,,FALSE,BWG,FALSE
+Recluse Wizard,Man,Peasant,118,15,28,M,"Outcast, Villager, City, Court",0,7,"Astrology, Alchemy, Enchanting, Illuminations, Ancient History, Obscure History",2,"Batshit, Gifted",,Sorcery,,,,,,FALSE,BWG,FALSE
+Country Wife,Man,Peasant,119,10,5,M+P,Religious,0,2,"Child-Rearing, Cooking",1,,,,,,,,Wife Rules,FALSE,BWG,FALSE
+Village Born,Man,Villager,201,10,4,,"Peasant, Servitude, Seafaring, Religious",3,0,,2,,,,,,,,,TRUE,BWG,FALSE
+Kid,Man,Villager,202,4,3,P,"Peasant, City, Religious, Soldier, Seafaring, Servitude, Outcast",0,3,"Trouble-wise, Throwing, Inconspicuous",1,"Bad Egg, Good for Nothing, Fleet of Foot",,,,1!,,,,FALSE,BWG,FALSE
+Idiot,Man,Villager,203,10,4,,"Outcast, Peasant",0,4,"Inconspicuous, Conspicuous, Ugly Truth, Village Secrets-wise",1,"Problems, Alcoholic, Abused, Handicapped",,,,,,,,FALSE,BWG,FALSE
+Pilgrim,Man,Villager,204,2,4,,"Religious, Servitude, City",0,5,"Religious Rumor-wise, Road-wise, Shrine-wise, Alms-wise, Relic-wise, Doctrine",2,Collector,,,,,,,,FALSE,BWG,FALSE
+Conscript,Man,Villager,205,1,5,,"Servitude, Soldier, Outcast",0,2,"Foraging, Baggage Train-wise",1,Hide from Battle,,,,,,,,FALSE,BWG,FALSE
+Groom,Man,Villager,206,4,7,,"Peasant, City, Soldier",0,4,"Animal Husbandry, Riding, Mending, Horse-wise, Road-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Runner,Man,Villager,207,4,6,P,"City, Peasant, Soldier",0,3,"Streetwise, Inconspicuous, Shortcut-wise",1,"Skinny, Fleet of Foot",,,,,,,,FALSE,BWG,FALSE
+Village Peddler,Man,Villager,208,5,10,M,"Peasant, Servitude, City, Outcast",0,7,"Mending, Sing, Haggling, Chandler, Persuasion, Inconspicuous, Falsehood",2,Odd,,,,,,,,FALSE,BWG,FALSE
+Shopkeeper,Man,Villager,209,6,15,,"City, Peasant",0,5,"Haggling, Accounting, Observation, Merchant-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Clerk,Man,Villager,210,4,9,,"City, Outcast, Soldier",0,4,"Bureaucracy, Write, Read, Contract-wise",1,"Cramped Hands, Mind for Small Details",,,,,,,,FALSE,BWG,FALSE
+Sailor,Man,Villager,211,5,5,P,"Soldier, City, Peasant, Servitude, Seafaring",0,6,"Rigging, Knots, Brawling, Mending, Sing, Fishing",1,"Superstitious, Sea Legs",,,,,,,,FALSE,BWG,FALSE
+Laborer,Man,Villager,212,4,4,P,"Soldier, Outcast, Servitude, Peasant",0,2,"Ditch Digging, Latrine-wise",2,"Calloused, Starved, Broken, Hardened, Numb",,,,,,,,FALSE,BWG,FALSE
+Miner,Man,Villager,213,3,7,P,"Soldier, Outcast, Servitude, Peasant",0,2,"Mining, Cave-In-wise",3,"Black Lung, Drunk, Superstitious",,,"Laborer, Conscript, Farmer, Foot Soldier",,,,,FALSE,BWG,FALSE
+Taskmaster,Man,Villager,214,6,15,,"City, Outcast, Soldier",0,5,"Intimidation, Brawling, Sing, Conspicuous, Lazy Bastard-wise",1,"Hard Hearted, Mean, Barker, Booming Voice",,,"Village Sergeant, Soldier LP",,,,,FALSE,BWG,FALSE
+Serving Wench,Man,Villager,215,3,5,M,"Peasant, City, Religious, Soldier, Seafaring, Servitude, Outcast, Noble Court",0,4,"Soothing Platitudes, Ugly Truth, Customer-wise, Sleight of Hand",2,"Extremely Bitter, Ugly, Drop Dead Gorgeous, Buxom",,,,,,,choose 1st trait,FALSE,BWG,FALSE
+Hosteller,Man,Villager,216,6,15,,"City, Peasant",0,5,"Cooking, Mending, Accounting, Soothing Platitudes, Guest-wise",1,"Fixed Smile, Gossip",,,,2,,,,FALSE,BWG,FALSE
+Village Guard,Man,Villager,217,3,7,P,"Soldier, City, Peasant, Servitude",0,4,"Appropriate Weapons, Intimidation, Brawling, Graft-wise, Village-wise, Guard-wise",1,Thug,,,,,,,,FALSE,BWG,FALSE
+Village Sergeant,Man,Villager,218,5,9,M/P,"Soldier, Servitude, Noble Court",0,6,"Command, Intimidation, Field Dressing, Appropriate Weapons, [T] Shield Training, [T] Armor Training, Bribe-wise, Wealthy-wise",1,"Overworked, Underpaid",,,"Village Guard, Squire, Freebooter, Sergeant-at-Arms, Man-at-Arms",,,,,FALSE,BWG,FALSE
+Corrupt Sergeant,Man,Villager,219,5,12,M/P,"Soldier, Servitude, Noble Court",0,6,"Initmidation, Appropriate Weapons, [T] Shield Training, [T] Armor Training, Bribe-wise, Wealthy-wise, Criminal-wise",1,Predatory,,,,,,,,FALSE,BWG,FALSE
+Tailor,Man,Villager,220,5,12,,"City, Peasant",0,5,"Sewing, Embroidery, Clothing-wise",1,Frippery,,,,,,,,FALSE,BWG,FALSE
+Tax Collector,Man,Villager,221,5,15,M,"City, Peasant, Outcast",0,4,"Intimidation, Accounting, Haggling, Persuasion",1,"Hard Hearted, Manhunter",,,,2,,,,FALSE,BWG,FALSE
+Cobbler,Man,Villager,222,8,20,,"City, Peasant, Soldier",0,4,"Cobbler, Shoe-wise, Feet-wise, Leather-wise, Nail-wise",1,Comfortable Shoes,,,Apprentice,,,,,FALSE,BWG,FALSE
+Farrier,Man,Villager,223,5,12,,"Peasant, Soldier, City",0,4,"Blacksmith, Animal Husbandry, Horse-wise, Haggling",1,A Bit Deaf,,,Apprentice,,,,,FALSE,BWG,FALSE
+Butcher,Man,Villager,224,6,15,,"City, Peasant, Outcast",0,4,"Butchery, Cooking, Guts-wise, Anatomy",2,"Prominent Scar, Thick Skin, Stinky, Muttering",,,,,,,,FALSE,BWG,FALSE
+Barber,Man,Villager,225,7,16,,"City, Peasant, Outcast",0,5,"Bloodletting, Anatomy, Apothecary, Village-wise, Gossip-wise",1,"Agreeable, Seemingly Concerned",,,,,,,,FALSE,BWG,FALSE
+Brewer,Man,Villager,226,8,15,,"City, Peasant, Noble Court",0,4,"Brewer, Miller, Grain-wise, Brew-wise",1,"Reeks of Alcohol, Ruddy Complexion",,,,,,,,FALSE,BWG,FALSE
+Acolyte,Man,Villager,227,7,10,M,"Peasant, Servitude, City, Religious",0,6,"Doctrine, Bureaucracy, Write, Read, Ritual, Religious History, Temple-wise",2,"Tonsured, Early Riser, Broken, Perfect Pitch",,,,,,,,FALSE,BWG,FALSE
+Failed Acolyte,Man,Villager,228,6,8,,"Outcast, Soldier, Peasant",0,4,"Temple-wise, Dirty Secrets-wise, Doctrine, Religious History",2,Bitter,,,,,,,,FALSE,BWG,FALSE
+Village Priest,Man,Villager,229,8,15,M,"Peasant, City, Religious, Soldier, Seafaring, Servitude, Outcast",0,5,"Oratory, Suasion, Symbology",2,"Vested, Devout, Faithful",,,Acolyte,,,,,FALSE,BWG,FALSE
+Venal Priest,Man,Villager,230,9,20,M,"Peasant, City, Religious, Soldier, Seafaring, Servitude, Outcast",0,6,"Persuasion, Soothing Platitudes, Falsehood",2,"Venal, Vested",,,"Acolyte, Clerk, Student, Religious LP",,,,,FALSE,BWG,FALSE
+Apprentice,Man,Villager,231,7,7,P,"City, Peasant, Soldier, Seafaring",0,6,"Mending, Blacksmith, Carpentry, Tanner, Potter, Cooper",2,"Broken In, Back-Breaking Labor",,,,,,,,FALSE,BWG,FALSE
+Journeyman,Man,Villager,232,6,15,M/P,"City, Peasant, Soldier, Seafaring",0,5,"Haggling, Appraisal, Write, Read",1,"Made Man, Geometric",,,Apprentice,,,,,FALSE,BWG,FALSE
+Cloth Dyer,Man,Villager,233,5,20,M,"City, Peasant",0,6,"Cloth Dyeing, Dye Manufacture, Accounting, Haggling, Fabric-wise, Mineral-wise",1,Many-Colored Hands,,,Apprentice,,,,,FALSE,BWG,FALSE
+Bowyer,Man,Villager,234,6,15,,"Soldier, Outcast, Peasant",0,4,"Bowyer, Fletcher, Mending, Bow, Bow-wise",1,,,,"Apprentice, Huntsman, Forester, Archer",,,,,FALSE,BWG,FALSE
+Master Craftsman,Man,Villager,235,10,30,M+P,"City, Soldier",3,6,"Craftsman-wise, Artisan-wise, Materials-wise, Tools-wise",1,"Perfectionist, Early Riser, Stubborn, Healthy",,,Journeyman,,,,,FALSE,BWG,FALSE
+Vintner,Man,Villager,236,10,40,M,"Noble Court, Peasant, Villager",0,4,"Vintner, Wine Tasting, Estate Management, Grape-wise",1,"Patient, Lugubrious",,,,2,,,,FALSE,BWG,FALSE
+Apiarist,Man,Villager,237,8,20,M,"City, Peasant, Noble Court",0,4,"Insect Husbandry, Carpentry, Firebuilding, Honey-wise",2,"Stung Once (Once), Beespeaker",,,,,,,,FALSE,BWG,FALSE
+Mining Engineer,Man,Villager,238,8,15,M,"City, Noble Court, Soldier",0,5,"Prospecting, Engineer, Ore-wise, Rock-wise, Command",1,"Grim, Agoraphobic, Deep Sense",,,"Apprentice, Miner, Student, Journeyman",,,,,FALSE,BWG,FALSE
+Town Official,Man,Villager,239,5,25,M,"City, Outcast, Soldier",0,8,"Rule of Law, Persuasion, Etiquette, Interrogation, Falsehood, Town-wise",1,Pragmatic,,,"Clerk, Priest, Student",,,,,FALSE,BWG,FALSE
+Merchant,Man,Villager,240,7,30,M,"City, Outcast, Seafaring",0,6,"Accounting, Persuasion, Falsehood, Haggling, Wholesale-wise, Landlord-wise",1,Distracted,,,"Accountant, Sea Captain, Shopkeeper, Smuggler, Fence, Vintner, Chamberlain",,,,,FALSE,BWG,FALSE
+Village Wife,Man,Villager,241,8,5,M+P,"Religious, City, Servitude",0,2,"Child-Rearing, Cooking",1,,,,,,,,Wife Rules,FALSE,BWG,FALSE
+City Born,Man,City,301,12,10,,"Servitude, Noble Court, Noble, Outcast",4,0,"Servitude, Noble Court, Noble, Outcast",1,,,,,,,,,TRUE,BWG,FALSE
+Runner,Man,City,302,3,7,P,"Villager, Soldier",0,3,"Streetwise, Inconspicuous",1,,,,,,,,,FALSE,BWG,FALSE
+Urchin,Man,City,303,2,4,,"Outcast, Servitude, Villager",0,5,"Inconspicuous, Falsehood, Streetwise, Stealthy",1,"Sickly, Fleet of Foot, Unheeded",,,,1-2,,,,FALSE,BWG,FALSE
+Beggar,Man,City,304,5,4,,"Outcast, Servitude, Villager",0,6,"City-wise, City Guard-wise, Wealth-wise, Inconspicuous, Persuasion, Falsehood",1,"Lame, Downtrodden, Hurt, Broken",,,,,,,,FALSE,BWG,FALSE
+Courier,Man,City,305,4,8,M,"Villager, Soldier",0,4,"Riding, Streetwise",1,,,,,,,,,FALSE,BWG,FALSE
+Laborer,Man,City,306,4,4,P,"Soldier, Outcast, Servitude, Peasant",0,2,"Ditch Digging, Hauling",2,"Drunk, Mind-Numbing Work",,,,,,,,FALSE,BWG,FALSE
+Pilgrim,Man,City,307,2,3,M,"Religious, Servitude, Villager",0,4,"Religious Diatribe, City-wise, Shrine-wise, Doctrine",2,"Tall Tale Teller, Stinky",,,,,,,,FALSE,BWG,FALSE
+Groom,Man,City,308,4,5,P,"Peasant, Villager, Soldier",0,6,"Road-wise, Driving, Riding, Animal Husbandry, Mending, City-wise, Traveler-wise",1,Peripatetic,,,,,,,,FALSE,BWG,FALSE
+Duelist,Man,City,309,4,8,P,"Soldier, Outcast, Servitude",0,7,"Sword, Brawling, [T] Two-Fisted Fighting Training, Streetwise, Haggling, Conspicuous, Trial by Combat-wise",1,"Mercenary, Cold-Blooded, Fearless",,,"Squire, Outcast LP, Soldier LP, Guard LP",,,,,FALSE,BWG,FALSE
+Coin Clipper,Man,City,310,6,15,M,"Outcast, Noble Court",0,5,"Streetwise, Forgery, Falsehood, Intimidation, Counterfeiting, Coin-wise",1,Light Sleeper,,,,,,,,FALSE,BWG,FALSE
+Pickpocket,Man,City,311,4,8,P,"Outcast, Villager, Servitude",0,5,"Inconspicuous, Streetwise, Sleight of Hand, Crowd-wise",1,Plain Face,,,,,,,,FALSE,BWG,FALSE
+Street Thug,Man,City,312,3,5,P,"Outcast, Servitude, Soldier",0,5,"Brawling, Intimidation, Streetwise, Darkened Streets-wise",1,"Cruel, Street Smart",,,,,,,,FALSE,BWG,FALSE
+Criminal,Man,City,313,5,10,M/P,"Outcast, Villager, Soldier",0,6,"Inconspicuous, Streetwise, Intimidation, Knives, Climbing",2,"Cynical, Poker Face, Rainman, Alert",,,,,,,,FALSE,BWG,FALSE
+Confidence Man,Man,City,314,4,12,,"Outcast, Soldier, Villager",0,5,"Falsehood, Inconspicuous, Disguise, Persuasion, Grift-wise",1,,,,,,,,,FALSE,BWG,FALSE
+City Peddler,Man,City,315,5,10,,"Villager, Servitude, Peasant, Otucast",0,7,"Mending, Sing, Haggling, Chandler, Persuasion, Inconspicuous, Falsehood",1,The Story,,,,,,,,FALSE,BWG,FALSE
+Sailor,Man,City,316,5,5,P,"Soldier, Seafaring, Peasant, Servitude",0,5,"Rigging, Knots, Brawling, Mending, Sing, Gambling",1,"Superstitious, Sea Legs",,,,,,,,FALSE,BWG,FALSE
+Student,Man,City,317,4,5,M,"Peasant, Villager, Religious, Soldier, Seafaring, Servitude, Outcast, Noble Court",0,11,"Write, Read, Philosophy, Rule of Law, History, Symbology, Anatomy, Astrology, Inconspicuous, Streetwise, City-wise",3,"Rabble Rouser, Drunk, Geometric",,,,,,,,FALSE,BWG,FALSE
+Ganymede,Man,City,318,5,15,,"Outcast, Servitude, Noble Court",0,5,"Fashion-wise, Inconspicuous, Conspicuous, Soothing Platitudes",2,"Catamite, Flamboyant, Comely, Sharp Dresser",,,,,,,,FALSE,BWG,FALSE
+Dilettante,Man,City,319,3,8,M,"Villager, Noble Court, Outcast",0,4,"Sorcery-wise, Obscure History, Falsehood",1,"Superstitious, Entropic, Cipher",,,,,,,,FALSE,BWG,FALSE
+Neophyte Sorcerer,Man,City,320,6,12,M,"Villager, Peasant, Outcast, Servitude",0,6,"Write, Read, Research, Symbology, Great Masters-wise",1,"Extremely Respectful of One's Betters, Bitter, Gifted",,,,,,,,FALSE,BWG,FALSE
+Temple Acolyte,Man,City,321,5,10,M,"Peasant, Outcast, Servitude, Religious",0,5,"Doctrine, Bureaucracy, Write, Read, Temple-wise",1,"Believer, Tonsured, Faithful",,,,,,,,FALSE,BWG,FALSE
+Sculptor,Man,City,322,5,8,M/P,"Outcast, Peasant, Noble Court",0,6,"Sculpture, Mason, Blacksmith, Carpentry, Stone-wise",2,Passionate,,,,,,,,FALSE,BWG,FALSE
+Painter,Man,City,323,5,5,M/P,"Outcast, Peasant, Noble Court",0,5,"Painting, Illuminations, Anatomy, Paint-wise",2,"Odd, Perceptive, Greater Muse",,,,,,,,FALSE,BWG,FALSE
+Composer,Man,City,324,4,5,M,"Outcast, Peasant, Noble Court",0,5,"Music Composition, Poetry, Sing, Musical Instrument",2,"Esoteric, Remote",,,,,,,,FALSE,BWG,FALSE
+Dramaturge,Man,City,325,4,5,M,"Outcast, Peasant, Noble Court",0,5,"Playwright, Composition, Write, Drama-wise",1,Other Life,,,,,,,,FALSE,BWG,FALSE
+Performer,Man,City,326,3,5,M,"Villager, Outcast, Soldier",0,6,"Acting, Persuasion, Sing, Falsehood, Conspicuous, Sleight of Hand, Musical Instrument",2,Colorful,,,,,,,,FALSE,BWG,FALSE
+Tinkerer,Man,City,327,7,8,M,"Villager, Peasant, Outcast",0,5,"Mending, Scavenging, Junk-wise",2,,,,,,,,,FALSE,BWG,FALSE
+Coal Man,Man,City,328,4,5,,"Servitude, Peasant, Outcast, Soldier",0,4,"Firebuilding, Streetwise, Charcoal-wise, Haggling",2,Hacking Cough,,,,,,,,FALSE,BWG,FALSE
+Seamstress,Man,City,329,5,10,,"Villager, Peasant",0,4,"Sewing, Embroidery, Clothing-wise, Fashion-wise",1,"Fretful, Sharp Dresser",,,,,,,,FALSE,BWG,FALSE
+Barkeep,Man,City,330,5,15,,"Villager, Peasant",0,4,"Drink-wise, Drunk-wise, Persuasion",1,Good Listener,,,,,,,,FALSE,BWG,FALSE
+Shopkeeper,Man,City,331,6,16,M,"Villager, Peasant",0,4,"Merchant-wise, Haggling, Accounting, Observation",,,,,,,,,,FALSE,BWG,FALSE
+Baker,Man,City,332,6,10,M,"Villager, Peasant",0,5,"Baking, Cooking, Daily Bread-wise, Sweet Tooth-wise",1,Floury,,,,,,,,FALSE,BWG,FALSE
+Alewife,Man,City,333,6,12,P,"Noble Court, Peasant, Villager",0,5,"Brewer, Mending, Drinking, Administration, Drunk Husband-wise",1,Domineering Presence,,,,,,female,,FALSE,BWG,FALSE
+Conner,Man,City,334,6,12,,"Noble Court, Peasant, Villager",0,5,"Brewer, Mending, Drinking, Cooper, Beer-wise",1,"Red Cheecks, Drunk",,,,,,,,FALSE,BWG,FALSE
+Clerk,Man,City,335,4,9,M,"Villager, Outcast, Soldier",0,4,"Bureaucracy, Write, Read, Accounting, Bribe-wise, Paperwork-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Scribe,Man,City,336,7,10,M,"Villager, Peasant",0,5,"Write, Illuminations, Read, Handwriting-wise",1,"Near-Sighted, Cramped Hands",,,"Student, Acolyte, Clerk",,,,,FALSE,BWG,FALSE
+Accountant,Man,City,337,10,15,M,"Villager, Peasant",0,4,"Accounting, Bureaucracy, Write, Read, Ledger-wise",1,Bored,,,"Clerk, Young Lady, Student",,,,,FALSE,BWG,FALSE
+Scholar,Man,City,338,10,15,M,"Villager, Outcast, Noble Court",0,11,"Read, Research, History, Philosophy, Symbology, Instruction, Illuminations, Foreign Languages, Ancient Languages",1,"Know It All, Bookworm",,,"Scribe, Thinker, Archivist, Interpreter, Custodian, Bishop, Sorcerous LP",,,,,FALSE,BWG,FALSE
+Moneylender,Man,City,339,8,20,,"Villager, Peasant, Outcast",0,4,"Currency-wise, Haggling, Accounting",1,Penny-wise,,,,,,,,FALSE,BWG,FALSE
+Tax Collector,Man,City,340,5,18,M,"Villager, Peasant, Outcast",0,4,"Intimidation, Accounting, Haggling, Interrogation",1,Hard Hearted,,,,2,,,,FALSE,BWG,FALSE
+Taskmaster,Man,City,341,6,15,M/P,"Villager, Outcast, Soldier",0,5,"Intimidation, Brawling, Sing, Conspicuous, Laborer-wise",1,"Intimidating, Dreadful",,,,2,,,,FALSE,BWG,FALSE
+Mercenary Captain,Man,City,342,5,15,M/P,"Soldier, Seafaring, Outcast",0,6,"Pilot, Fat Merchant-wise, Sword, Climbing, Intimidation",2,Predatory,,,"Sailor, Pirate, Knight",,,,,FALSE,BWG,FALSE
+City Guard,Man,City,343,5,9,P,"Soldier, Outcast",0,5,"Brawling, Intimidation, Drinking, Appropriate Weapons, [T] Armor Training",1,Drunk,,,,,,,,FALSE,BWG,FALSE
+Sergeant-at-Arms,Man,City,344,6,11,P,"Soldier, Outcast",0,6,"Intimidation, Appropriate Weapons, [T] Armor Training, Field Dressing",1,Overworked,,,"Guard LP, Marine, First Mate, Foot Soldier, Freebooter, Squire, Man-at-Arms, Cavalryman",,,,,FALSE,BWG,FALSE
+Guard Captain,Man,City,345,6,15,M,"Soldier, Outcast, Noble Court",0,6,"Etiquette, Riding, Intimidation, Command, Appropriate Weapons",1,Exasperated,,,"Knight, Captain, Sergeant",,,,,FALSE,BWG,FALSE
+Apprentice,Man,City,346,7,8,P,"Villager, Peasant, Soldier, Seafaring",0,6,"Mending, Write, Read, Hauling, Driving, Ditch Digging",2,"Broken In, Back-Breaking Labor",,,,,,,,FALSE,BWG,FALSE
+Apprentice Artisan,Man,City,347,8,10,P,"Villager, Soldier",0,8,"Artisan-wise, Mason, any ""smith"" skill, Carpentry, Write, Read, Jargon",1,,,,,,,,,FALSE,BWG,FALSE
+Journeyman,Man,City,348,6,15,M/P,"Villager, Peasant, Soldier, Seafaring",0,7,"Haggling, Appraisal, Blacksmith, Carpentry, Tanner, Potter, Cooper",1,"Made Man, Geometric",,,Apprentice,,,,,FALSE,BWG,FALSE
+Engraver,Man,City,349,7,15,P,"Soldier, Noble Court",0,4,"Engraving, Etching, Jargon",1,Gentle but Firm,,,Journeyman,,,,,FALSE,BWG,FALSE
+Saddler,Man,City,350,8,25,M/P,"Villager, Soldier, Court",0,6,"Saddlery, Tanner, Sewing, Embroidery, Mending, Mount-wise",1,,,,Journeyman,,,,,FALSE,BWG,FALSE
+Armorer,Man,City,351,10,25,,"Soldier, Court, Outcast",0,7,"Swordsman-wise, Blacksmith, Tanner, Armorer, Weaponsmith",1,,,,Journeyman,,,,,FALSE,BWG,FALSE
+Plumber,Man,City,352,7,20,M,"Noble Court, Outcast",0,5,"Plumbing, Engineer, Coppersmith, Waterworks",1,A Touch of Madness,,,Journeyman,,,,,FALSE,BWG,FALSE
+Locksmith,Man,City,353,8,13,M,"Peasant, Villager",0,4,"Locksmith, Haggling, Lock-wise",1,Steady Hands,,,Journeyman,,,,,FALSE,BWG,FALSE
+Jeweler,Man,City,354,9,20,,"Villager, Peasant",0,5,"Jeweler, Lapidary, Appraisal, Haggling, Falsehood",1,Guarded,,,Journeyman,,,,,FALSE,BWG,FALSE
+Gaol Warden,Man,City,355,4,15,,"Outcast, Noble Court, Soldier, Villager",0,4,"Administration, Etiquette, Gaol-wise, Everybody's Innocent-wise",1,,,,"Born Noble, Merchant, Sergeant, Man-at-Arms, Judge",,,,,FALSE,BWG,FALSE
+Advocate,Man,City,356,6,25,M,"Outcast, Noble Court, Villager",0,6,"Rule of Law, Bureaucracy, Persuasion, History, Rhetoric",1,Shrewd,,,"Student, Young Lady",,,,,FALSE,BWG,FALSE
+Doctor,Man,City,357,7,20,M,"Outcast, Noble Court, Villager",0,6,"Anatomy, Apothecary, Bloodletting, Surgery, Soothing Platitudes",2,Frustrated,,,"Student, Young Lady",,,,,FALSE,BWG,FALSE
+Physician,Man,City,358,5,15,M,"Noble Court, Soldier",0,6,"Herbalism, Apothecary, Anatomy, Research, Herbalist-wise",1,,,,"Midwife, Young Lady, Student",,,,,FALSE,BWG,FALSE
+Hospital Warden,Man,City,359,4,15,,"Outcast, Servitude, Religious",0,5,"Administration, Beggar-wise, Vagrant-wise, Leper-wise",2,"Overworked, Generous, Venal, Hypochondriac",,,"Noble LP, Noble Court LP, Religious LP",,,,,FALSE,BWG,FALSE
+Banker,Man,City,360,10,60,,"Noble Court, Noble",2,4,"Accounting, Administration, Currency-wise",1,Intense,,,"Merchant, Moneylender, Steward, Accountant, Chamberlain",,,,,FALSE,BWG,FALSE
+Merchant,Man,City,361,3,30,M,"Villager, Peasant, Noble Court",0,6,"Accounting, Haggling, Supplier-wise, Lord-wise, Peasant-wise",,,,,"Master Craftsman, Master of Horses, Master of Hounds, Moneylender, Steward, Jeweler, Saddler, Armorer, Courtier, Chamberlain",,,,,FALSE,BWG,FALSE
+Sorcerer,Man,City,362,6,32,M+P,"Villager, Outcast, Noble Court",0,6,"Sorcery, Enchanting, Calligraphy",1,,,,"Neophyte Sorcerer, Arcane Devotee, Wheather Witch",,,,,FALSE,BWG,FALSE
+Temple Priest,Man,City,363,5,20,,"Peasant, Villager, Religious, Soldier, Seafaring, Servitude, Outcast, Noble Court",0,8,"Church Politics-wise, Doctrine, Oratory, Suasion, Symbology",2,"Vested, Aloof, Imperious, Strong-Willed",,,"Religious Acolyte, Temple Acolyte, Military Order",,,,,FALSE,BWG,FALSE
+Judge,Man,City,364,10,30,M,"Noble Court, Villager",0,5,"Rule of Law, Amercement, Criminal-wise, Interrogation",2,"Ornery, Quick-Witted",,,"Town Official, Tax Collector, Bailiff, Justiciar",,,,,FALSE,BWG,FALSE
+Municipal Minister,Man,City,365,9,30,M,"Villager, Noble Court, Outcast",0,6,"Persuasion, Rule of Law, Administration, Oratory, Law-wise, Minister-wise",,,,,"Town Official, Scholar, Priest, Bishop, Captain, Sea Captain, Artisan, Master Craftsman, Knight, Courtier, Master of Horses",,,,,FALSE,BWG,FALSE
+Artisan,Man,City,366,10,45,M,"Soldier, Noble Court",0,9,"Jargon, Mason, Engineer, Archtiect",1,Self-Confident,,,"Apprentice Artisan, Engineer, Master Craftsman",,,,,FALSE,BWG,FALSE
+Master Craftsman,Man,City,367,10,45,M+P,"Villager, Noble Court, Soldier",3,6,"Craftsman-wise, Artisan-wise, Materials-wise, Tools-wise",2,"Ambitious, Charismatic",,,"Locksmith, Plumber, Engraver, Saddler, Blacksmith, Armorer, Atilliator, Cobbler, Bowyer, Taskmaster",,,Also requires Journeyman,,FALSE,BWG,FALSE
+Bishop,Man,City,368,12,60,M,"Noble Court, Religious",0,5,"Etiquette, Bureaucracy, Ritual, Chruch-wise, City-wise",1,Holier,Your Grace,,"Archpriest, Canon, Steward, Chamberlain",,,,,FALSE,BWG,FALSE
+Magnate,Man,City,369,12,75,M,"Peasant, Villager, Religious, Soldier, Seafaring, Servitude, Outcast, Noble Court, Noble",1,6,"Administration, Merchant-wise, Court-wise, Commodities-wise, Pirates-wise, Bandit-wise",2,"Self-Satisfied, Greedy, Affinity for Business",,,"Merchant, Master of Horses",,,,,FALSE,BWG,FALSE
+City Wife,Man,City,370,6,5,M,Religious,0,2,"Child-Rearing, Husband-wise",1,,,,,,,,Wife Rules,FALSE,BWG,FALSE
+Born Noble,Man,Noble,401,8,15,,"Peasant, Villager, Religious, Soldier, Seafaring, Servitude, Outcast, Noble Court, City",5,0,,1,"Mark of Privilege, Your Lordship, Your Eminence, Your Grace",,,,,,,,TRUE,BWG,FALSE
+Bastard,Man,Noble,402,6,15,M/P,"Outcast, Soldier, City, Religious",0,4,"Family Secrets-wise, Etiquette, Extortion",2,"Bastad, Bitter, Cynical, Happy-Go-Lucky",,,,1!,,,,FALSE,BWG,FALSE
+Page,Man,Noble,403,6,15,P,"Soldier, City, Servitude",0,7,"Riding, Brawling, Write, Read, Sword, Etiquette",1,,,,,1!,,,,FALSE,BWG,FALSE
+Student,Man,Noble,404,4,10,M,"City, Noble Court",0,8,"Write, Read, Rule of Law, Oratory, Doctrine, Etiquette",1,,,,,,,,,FALSE,BWG,FALSE
+Squire,Man,Noble,405,6,15,M+P,"Soldier, City, Servitude, Outcast",0,9,"Sword, [T] Mounted Combat Training, [T] Shield Training, [T] Armor Training, Lance, Knives, Crossbow",1,,,,"Page, Soldier LP",,,,,FALSE,BWG,FALSE
+Arcane Devotee,Man,Noble,406,6,10,M,"City, Noble Court, Outcast",0,6,"Calligraphy, Write, Read, Research, Symbology",2,"Base Humility, Gifted",,,,,,,,FALSE,BWG,FALSE
+Religious Acolyte,Man,Noble,407,5,10,M,"City, Religious, Noble Court",0,6,"Doctrine, Bureaucracy, Write, Read, Etiquette",2,"Tonsured, Faithful",,,,,,,,FALSE,BWG,FALSE
+Young Lady,Man,Noble,408,10,20,M,"City, Noble Court, Religious",0,11,"Wrote, Read, Etiquette, Astrology, Musical Instrument, Composition, Field Dressing, Apothecary, Doctrine",2,,,,,1-2!,,,,FALSE,BWG,FALSE
+Knight,Man,Noble,409,5,20,P,"Soldier, City, Outcast, Religious",0,10,"[T] Mounted Combat Training, [T] Shield Training, [T] Armor Training, Appropriate Weapons, Intimidation, Hunting, Conspicuous",2,Sworn Homage,,,"Squire, Cavalryman",,,,,FALSE,BWG,FALSE
+Lady,Man,Noble,410,5,25,M,"City, Outcast, Religious, Noble Court",0,11,"Etiquette, Estate Management, Persuasion, Seduction, Inconspicuous, Doctrine, Husband-wise, Estate-wise, Staff-wise, Court-wise",1,,,,"Young Lady, Courtier, Knight, City Wife with Magnate/Bishop",,,,,FALSE,BWG,FALSE
+Lord,Man,Noble,411,7,50,M,"Soldier, Noble Court, City",1,6,"Hunting, Dance, Sing, Falconry, Estate Management",1,,Your Lordship,,Knight,,,,,FALSE,BWG,FALSE
+Dame,Man,Noble,412,7,40,M,"City, Noble Court, Outcast, Religious",2,3,"Estate Management, Noble-wise",1,,Your Lordship,,"Lady, City Wife with Magnate/Bishop",,,,,FALSE,BWG,FALSE
+Baron,Man,Noble,413,8,60,M/P,"Noble Court, Soldier",1,0,,1,"Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",,,"Magnate, Master of Horses, Steward, Lord, Constable, Justiciar",,,or Knight AND Your Lordship,,FALSE,BWG,FALSE
+Viscount,Man,Noble,414,9,65,M/P,"Noble Court, Soldier",2,0,,1,"Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",,,"Magnate, Baron, Constable, Justiciar",,,or Knight AND Your Eminence,,FALSE,BWG,FALSE
+Count,Man,Noble,415,10,70,M/P,"Noble Court, Soldier",3,0,,1,"Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",,,"Magnate, Constable, Justiciar",,,or Knight AND Your Eminence,,FALSE,BWG,FALSE
+Duke,Man,Noble,416,10,90,M/P,"Noble Court, Soldier",3,0,,1,"Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",,,,,,Knight AND Your Grace,,FALSE,BWG,FALSE
+Noble Prince,Man,Noble,417,10,100,M/P,"Noble Court, Soldier",4,0,,1,"Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",,,,,,Duke or Knight AND Your Grace,,FALSE,BWG,FALSE
+Prince of the Blood,Man,Noble,418,*,60,,"Noble Court, Soldier, Religious",2,0,,2,"Born to be King, Noblesse Oblige, Regal Bearing, Pompous, Sharp Dresser Callous",Your Grace ,,,,,Express Permission,*2-20 yrs,FALSE,BWG,FALSE
+Minstrel,Man,Noble Court,501,4,10,M,"City, Outcast, Villager",0,5,"Poetry, Sing, Musical Instrument",1,Recondite,,,,,,,,FALSE,BWG,FALSE
+Court Jester,Man,Noble Court,502,5,10,,"Outcast, Servitude",0,7,"Sing, Sleight of Hand, Climbing, Conspicuous, Throwing, Ugly Truth",3,"Scapegoat, Aura of Innocence",,,,,,,,FALSE,BWG,FALSE
+Court Artist,Man,Noble Court,503,6,15,,"City, Outcast",0,5,"Sculpture, Painting, Engraving, Seduction, Genius-wise",1,Romantic,,,"Court Jester, Painter, Thinker, Scholar, Sculptor",,,,,FALSE,BWG,FALSE
+Servant,Man,Noble Court,504,6,7,,"Outcast, Servitude",0,4,"Inconspicuous, Etiquette, Court Gossip-wise",2,"Veneer of Obedience, Lifting Heavy Things, Bored",,,,,,,,FALSE,BWG,FALSE
+Nurse,Man,Noble Court,505,6,7,,"Outcast, Servitude, Villager",0,5,"Child-Rearing, Etiquette, Court Gossip-wise, Field Dressing, Child-wise",2,Maternal,,,,,,,,FALSE,BWG,FALSE
+Groom,Man,Noble Court,506,4,5,P,"City, Villager, Soldier",0,5,"Animal Husbandry, Riding, Mending, Border-wise, Road-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Gardener,Man,Noble Court,507,10,10,P,"City, Servitude",0,7,"Plant-wise, Flower-wise, Tree-wise, Pest-wise, Herbalism, Farming, Almanac",2,"Earthy Smell, Salt of the Earth, Down to Earth, Affinity for Plants",,,,,,,,FALSE,BWG,FALSE
+Torturer,Man,Noble Court,508,5,10,M,"Outcast, Servitude, Soldier",0,5,"Interrogation, Torture, Anatomy, Torture Devices-wise",1,Unsavory Madman,,,,,,,,FALSE,BWG,FALSE
+Forester,Man,Noble Court,509,7,9,M/P,"Peasant, Soldier, Villager, Outcast",0,8,"Observation, Orienteering, Foraging, Survival, Tracking, Trapper, Cudgel, Staff, Bow, Poacher-wise, Park-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Student,Man,Noble Court,510,4,10,M,"City, Noble, Religious",0,9,"Write, Read, Rule of Law, Oratory, Doctrine, Etiquette",1,"Dangerous, Geometric",,,,,,,,FALSE,BWG,FALSE
+Page,Man,Noble Court,511,6,15,P,"Soldier, City, Servitude, Noble",0,6,"Riding, Brawling, Write, Read, Sword",1,,,,,1!,,,,FALSE,BWG,FALSE
+Man-at-Arms,Man,Noble Court,512,6,12,P,"Soldier, City, Otucast",0,8,"[T] Mounted Combat Training, [T] Shield Training, [T] Armor Training, Brawling, Intimidation, Etiquette, Appropriate Weapons",1,,,,"Page, Squire, Soldier LP",,,,,FALSE,BWG,FALSE
+Falconer,Man,Noble Court,513,5,10,M/P,"Peasant, Soldier, City",0,4,"Falconry, Animal Husbandry, Hunting",2,"Boaster, Weird, Birdie Talk",,,,,,,,FALSE,BWG,FALSE
+Huntsman,Man,Noble Court,514,5,12,M/P,"Peasant, Soldier",0,8,"Hunting, Animal Husbandry, Forest-wise, Stealthy, Cooking, Tracking, Orienteering, Crossbow",1,,,,,,,,,FALSE,BWG,FALSE
+Herald,Man,Noble Court,515,4,10,,"Soldier, Servitude, City",0,4,"Heraldry, Noble-wise",1,"Formalist, Rainman, Eidetic Memory",,,,,,,,FALSE,BWG,FALSE
+Court Chef,Man,Noble Court,516,5,14,M,"Outcast, City",0,5,"Cooking, Sing, Herbalism, Falsehood",1,,,,,,,,,FALSE,BWG,FALSE
+Squire,Man,Noble Court,517,5,14,M+P,"Soldier, City, Servitude, Outcast, Noble",0,9,"Sword, [T] Armor Training, [T] Shield Training, Lance, Brawling, [T] Mounted Combat Training, Etiquette",1,"Pragmatic, Tough, Determined",,,"Corrupt Sergeant, Village Sergeant, Sergeant, Veteran, Page, Man-at-Arms",,,,,FALSE,BWG,FALSE
+Young Lady,Man,Noble Court,518,9,25,M,"City, Noble, Religious",0,10,"Write, Read, Etiquette, Petry, Astrology, Musical Instrument, Composition, Field Dressing, Apothecary, Court Gossip-wise",1,,,,,1-2!,,,,FALSE,BWG,FALSE
+Knight,Man,Noble Court,519,6,20,P,"Soldier, Noble, Outcast",0,11,"Conspicuous, Intimidation, Falconry, [T] Mounted Combat Training, [T] Shield Training, [T] Armor Training, Appropriate Weapons",1,"Sworn Homage, Sense of Entitlement",,,"Squire, Cavalryman",,,,,FALSE,BWG,FALSE
+Courtier,Man,Noble Court,520,5,15,M,"City, Outcast, Noble",0,8,"Etiquette, Observation, Persuasion, Seduction, Inconspicuous, Court Gossip-wise, Noble-wise",2,Rapier Wit,,,,,,,,FALSE,BWG,FALSE
+Governess,Man,Noble Court,521,8,12,,"Outcast, Servitude, Villager",0,7,"Family-wise, Administration, Intimidation, Etiquette, Persuasion, Ugly Truth",1,"Dismissve, You Should Know Better than That!, Bitter",,,"Nurse, Midwife, Lady, Wife LP",,,,,FALSE,BWG,FALSE
+Chaplain,Man,Noble Court,522,5,18,M/P,"Soldier, City, Religious, Servitude",0,8,"Oratory, Doctrine, Riding, [T] Armor Training, [T] Mounted Combat Training, [T] Shield Training, Appropriate Weapons",1,,,,"Military Order, Priest LP",,,,,FALSE,BWG,FALSE
+Court Sorcerer,Man,Noble Court,523,8,32,M,"Outcast, City",0,7,"Etiquette, Falsehood, Astrology, Alchemy, Sorcery",1,"Inscrutable, Gifted, Second Sight",,,"Arcane Devotee, Rogue Wizard, Sorcerer",,,,,FALSE,BWG,FALSE
+Court Lawyer,Man,Noble Court,524,8,25,M,"City, Outcast, Religious",0,6,"Etiquette, Oratory, Persuasion, Rule of Law, History",1,"Rhetorical, Evasive",,,"Student, Advocate",,,,,FALSE,BWG,FALSE
+Court Doctor,Man,Noble Court,525,8,20,M,"City, Outcast",0,7,"Etiquette, Apothecary, Bloodletting, Surgery, Anatomy, Astrology, Falsehood",1,Incomprehensible Diagnosis,,,"Student, Itinerant Monk, Cloistered Nun, Priest",,,,,FALSE,BWG,FALSE
+Chronicler,Man,Noble Court,526,10,15,M,"City, Outcast, Villager",0,6,"Composition, History, Etiquette, Illuminations, Obscure History",2,"Prone to Exaggeration, Flatterer, Denouncer, Cynical, Righteous",,,"Student, Custodian, Interpreter, Archivist, Young Lady",,,,,FALSE,BWG,FALSE
+Armorer,Man,Noble Court,527,7,25,P,"City, Soldier",0,9,"Etching, Armorer, Blacksmith, Tanner, Sewing, Weaponsmith",1,Proud,,,Journeyman,,,,,FALSE,BWG,FALSE
+Atilliator,Man,Noble Court,528,10,30,P,"Soldier, City",0,6,"Atilliator, Carpentry, Carving",1,Professionally Diligent,,,Journeyman,,,,,FALSE,BWG,FALSE
+Court Priest,Man,Noble Court,529,6,20,M,"Outcast, City, Religious",0,5,"Etiquette, History, Symbology, Doctrine, Persuasion",2,"Royal Favorite, Faithful",,,"Chaplain, Priest, Religious Acolyte",,,,,FALSE,BWG,FALSE
+Steward,Man,Noble Court,530,7,15,M,"City, Noble, Outcast, Religious",0,6,"Estate Management, Accounting, Observation, Manor-wise",1,,,,"Town Official, Municipal Minister, Judge, Court Lawyer, Court Doctor, Governess, Young Lady, Magnate, Lord",,,,,FALSE,BWG,FALSE
+Master of Horses,Man,Noble Court,531,8,40,,"City, Soldier",0,4,"Horse Husbandry, Appraisal, Horse-wise",1,"Love of the Horse, Low Speech, Affinity for Horses",,,"Captain, Baron, Saddler, Merchant, Magnate",,,,,FALSE,BWG,FALSE
+Master of Hounds,Man,Noble Court,532,7,20,,"City, Soldier",0,7,"Dog Husbandry, Dog-wise, Hunting, Instruction, Minicry",1,"Dog Lover, Pigpen, Emotional, Iron Stomach",,,"Captain, Baron, Saddler, Merchant, Magnate",,,,,FALSE,BWG,FALSE
+Hostage,Man,Noble Court,533,6,*,,"City, Noble, Soldier, Religious",0,4,"Etiquette, Court-wise, Foreign Languages, Foreign History",1,"Homesick, Bored, Darling of the Court",,,Noble LP,,,,* half resources of previous LP,FALSE,BWG,FALSE
+Bailiff,Man,Noble Court,534,4,15,M/P,"City, Soldier, Outcast",0,7,"Intimidation, Interrogation, Rule of Law, Outlaw-wise, Village-wise, City-wise, Tax-wise",1,Nose for Trouble,Your Lordship,,Knight,,,,,FALSE,BWG,FALSE
+Justiciar,Man,Noble Court,535,5,15,M/P,"City, Soldier, Outcast",0,6,"Rule of Law, Amercement, Interrogation, Criminal-wise, Circuit-wise",1,"Stern Demeanor, Amenable to Other Options",,,"Judge, Captain, Bailiff, Lord",,,,,FALSE,BWG,FALSE
+Coroner,Man,Noble Court,536,6,15,,"City, Soldier",0,5,"Rule of Law, Anatomy, Writ-wise, Observation",1,"Hard Hearted, Seen It All",,,"Steward, Town Official, Municipal Minister, Judge, Court Lawyer, Court Doctor, Magnate, Lord",,,,,FALSE,BWG,FALSE
+Constable,Man,Noble Court,537,6,50,M,"City, Soldier, Outcast",0,5,"Command, Heraldry, Logistics, Kingdom-wise, Obligation-wise, Soldier-wise, Cavalry-wise",1,Weight of the World,,,"Captain, Baron, Viscount, Count, Duke, Prince",,,,,FALSE,BWG,FALSE
+Treasurer,Man,Noble Court,538,7,45,,"City, Soldier, Religious",0,5,"Accounting, Estate Management, Tax-wise, Debt-wise",1,"Pecunious, Lavish Taste",,,"Steward, Town Official, Municipal Minister, Judge, Court Lawyer, Court Doctor, Magnate, Baron, Bishop, Viscount, Count, Duke",,,,,FALSE,BWG,FALSE
+Chamberlain,Man,Noble Court,539,7,30,M,"City, Soldier, Religious",1,5,"Soothing Platitudes, Persuasion, Ugly Truth",1,,,,"Scholar, Steward, Town Official, Municipal Minister, Judge, Court Lawyer, Court Doctor, Magnate, Baron, Bishop, Viscount, Count, Duke",,,,,FALSE,BWG,FALSE
+Advisor to the Court,Man,Noble Court,540,*,10/yr,M/P,"Peasant, Villager, City, Noble, Noble Court, Seafaring, Servitude, Soldier Outcast",1/yr,1,,,,,,"Thinker, Captain, Sea Captain, Magnate, Master Craftsman, Artisan, Bishop, Rogue Wizard, Mad Summoner, Heretic Priest, Dame, Baron, Viscount, Count, Duke, Prince",,,,,FALSE,BWG,FALSE
+Castrati,Man,Religious,601,7,15,M,"Outcast, Noble Court",0,7,"Sing, Persuasion, Falsehood, Etiquette, Administration, Rule of Law",3,"Eunuch, Scheming",,,,,,,,FALSE,BWG,FALSE
+Pardoner,Man,Religious,602,5,12,,"Peasant, City, Villager, Outcast",0,5,"Persuasion, Falsehood, Intimidation, Doctrine",1,"Pardoner, Corrupt",,,,,,,,FALSE,BWG,FALSE
+Zealous Convert,Man,Religious,603,4,10,,"Outcast, Peasant, Servitude, Noble Court",0,4,"Religious Diatribe, Doctrine, Rhetoric",3,"Infallible Religious Logic, Righteous, Firm, Demagogue",,,,,,,,FALSE,BWG,FALSE
+Military Order,Man,Religious,604,3,7,M+P,"Villager, City, Noble, Noble Court, Seafaring, Servitude, Soldier Outcast",0,5,"Doctrine, Riding, [T] Armor Training, Appropriate Weapons",2,"Disciplined, Fanatical Devotion, Sworn to The Order",,,"Squire, Knight, Soldier LP",,,,,FALSE,BWG,FALSE
+Grave Digger,Man,Religious,605,4,6,,"Outcast, Servitude, City, Villager",0,4,"Digging, Grave-wise, Cemetery-wise",2,"Superstitious, Burial Rites",,,,,,,,FALSE,BWG,FALSE
+Porter,Man,Religious,606,3,5,,"Outcast, Villager, Peasant",0,4,"Temple-wise, Priest-wise, Worshipper-wise, Church Treasure-wise",1,"Keys to the Church, Familiar Face",,,,,,,,FALSE,BWG,FALSE
+Notary,Man,Religious,607,4,15,,"City, Outcast, Court",0,4,"Rule of Law, Bureaucracy, Church Law, Bribe-wise",1,,,,"Clerk, Young Lady, Student",,,,,FALSE,BWG,FALSE
+Custodian,Man,Religious,608,5,10,M,"City, Outcast",0,7,"Relic-wise, Observation, Obscure History, Religious History, Folklore, Saint-wise",2,"Strange, Erudite, Obsessed, Arcane",,,"Student, Young Lady, Cloistered Nun, Temple Acolyte, Inquisitor, Exorcist, Theologician",,,,,FALSE,BWG,FALSE
+Interpreter,Man,Religious,609,5,10,,"City, Noble Court, Villager",0,7,"Read, Ancient Languages, Instruction, Write, Doctrine, Foreign Languages",2,"Ink-Stained Hands, Condescending",,,"Student, Young Lady, Temple Acolyte, Exorcist, Theologian",,,,,FALSE,BWG,FALSE
+Archivist,Man,Religious,610,7,8,M,"City, Villager, Court",0,5,"Research, Library-wise, Ancient History, Symbology",1,"Myopic, Affinity for Books and Scrolls",,,"Student, Cloistered Nun, Exorcist, Theologian",,,,,FALSE,BWG,FALSE
+Itinerant Monk,Man,Religious,611,6,6,,"Peasant, Villager, Outcast",0,7,"Doctrine, Suasion, Meditation, Begging, Alms-wise, Streetwise, Road-wise",2,Tonsured,,,,,,,,FALSE,BWG,FALSE
+Cloistered Nun,Man,Religious,612,10,12,,"Peasant, Outcast, Noble Court",0,6,"Research, History, Meditation, Monastic Ritual, Vintner, Symbology",1,"Tonsured, Restless, Bored",,,,,,,,FALSE,BWG,FALSE
+Temple Acolyte,Man,Religious,613,6,5,M,"City, Outcast, Soldier",0,4,"Write, Read, Doctrine, Temple-wise",1,"Tonsured, Obedient, Faithful",,,,,,,,FALSE,BWG,FALSE
+Priest,Man,Religious,614,5,18,M,"Villager, Outcast, Soldier, Noble Court",0,7,"Oratory, Suasion, Write, Read, Doctrine, Ritual, Symbology, Religious History",2,Vested,,,"Temple Acolyte, Religious Acolyte",,,,,FALSE,BWG,FALSE
+Exorcist,Man,Religious,615,6,10,M,"Outcast, City, Noble Court",0,8,"Doctrine, Obscure History, Observation, Church Law, Symbology, Demonology, Ancient Languages",2,"Skeptical, Haunted, Possessed, Exorcist, Lost Faith, Faithful",,,"Temple Priest, Itinerant Priest, Priest, Court Priest, Archivist",,,,,FALSE,BWG,FALSE
+Inquisitor,Man,Religious,616,6,15,M/P,"Outcast, Soldier, City, Court",0,6,"Doctrine, Interrogation, Torture, Heresy-wise",2,"Suspicious, Merciless, Cold-Blooded, Righteous",,,"Temple Priest, Itinerant Priest, Priest, Court Priest, Judge, Justiciar",,,,,FALSE,BWG,FALSE
+Theologian,Man,Religious,617,10,9,M,"City, Villager, Noble Court",0,10,"Doctrine, Rhetoric, Philosophy, History, Religious History, Church Law, Obscure History, Read, Write",2,"Learned, Insightful, Bookworm, Academic",,,"Scribe, Archivist, Court Lawyer, Advocate, Custodian, Interpreter, Priest, Bishop",,,,,FALSE,BWG,FALSE
+Archpriest,Man,Religious,618,5,25,M/P,"City, Outcast, Noble Court",0,10,"Oratory, Suasion, Write, Read, Doctrine, History, Religious History, Ritual, Church-wise, Parish-wise, Tithe-wise",2,Imperious Demeanor,,,"Temple Priest, Itinierant Priest, Priest, Court Priest, Chaplain",,,,,FALSE,BWG,FALSE
+Canon,Man,Religious,619,10,45,M/P,"City, Outcast, Noble Court",0,6,"Rule of Law, Church Law, Administration, Doctrine, Church-wise",1,Authoritative,,,"Archpriest, Theologian, Abbot",,,,,FALSE,BWG,FALSE
+Abbot,Man,Religious,620,10,45,M,"City, Outcast, Noble Court",2,6,"Administration, Accounting, Vintner, Wine Tasting, Royal Secret-wise, Abbey-wise",1,,,,"AItinerant Monk, Cloistered Nun, Theologian, Vintner",,,,,FALSE,BWG,FALSE
+Bishop,Man,Religious,621,8,45,,"City, Outcast, Noble Court",0,7,"Religious History, Intimidation, Ritual, Symbology, History, Obscure History",2,Domineering Presence,,,"Archpriest, Baron, Viscount, Count, Duke, Prince",,,,AND Your Grace,FALSE,BWG,FALSE
+Runner,Man,Soldier,701,3,5,P,"Villager, Peasant, Servitude, Outcast",0,4,"Inconspicuous, Stealthy, Sing",2,"Skinny, Fleet of Foot, Sprinter",,,,,,,,FALSE,BWG,FALSE
+Apprentice,Man,Soldier,702,4,6,P,"City, Peasant, Villager",0,6,"Mending, Write, Read, Hauling, Driving, Ditch Digging",2,"Exhausted, Back-Breaking Labor",,,,,,,,FALSE,BWG,FALSE
+Musician,Man,Soldier,703,3,5,M,"Villager, Peasant Servitude",0,4,"Musical Instrument, Conspicuous, Riding",1,,,,,,,,,FALSE,BWG,FALSE
+Foot Soldier,Man,Soldier,704,3,6,P,"Outcast, Villager, Servitude",0,6,"Soldiering, Appropriate Weapons, [T] Shield Training, Brawling, Foraging, Firebuilding",1,,,,,,,,,FALSE,BWG,FALSE
+Archer,Man,Soldier,705,3,5,P,"Outcast, Villager, Servitude",0,5,"Bow, Fletcher, Brawling, Foraging, Firebuilding",1,,,,,,,,,FALSE,BWG,FALSE
+Crossbowman,Man,Soldier,706,3,7,P,"Outcast, Villager, Servitude",0,5,"Crossbow, Fletcher, Brawling, Foraging, Firebuilding",1,,,,,,,,,FALSE,BWG,FALSE
+Sailor,Man,Soldier,707,5,5,P,"Seafaring, Outcast, Villager, Servitude",0,6,"Seamanship, Rigging, Knots, Mending, Navigation, Knives, Sword",1,"Iron Stomach, Sea Legs, Affinity for Rope",,,,,,,,FALSE,BWG,FALSE
+Herald,Man,Soldier,708,3,7,M,"Villager, Servitude, Noble Court",0,4,"Oratory, Conspicuous, Riding, Heraldry, Bannerman-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Bannerman,Man,Soldier,709,3,7,P,"Villager, Servitude, Noble Court",0,5,"Conspicuous, Riding, Heraldry, Bannerman-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Scout,Man,Soldier,710,3,4,P,"Peasant, Servitude, Outcast",0,5,"Stealthy, Foraging, Orienteering, Appropriate Weapons, Observation",1,,,,,,,,,FALSE,BWG,FALSE
+Sergeant,Man,Soldier,711,5,8,M/P,"Villager, Servitude, Noble Court",0,6,"Initimidation, Command, Field Dressing, Appropriate Weapons",1,,,,"Squire, Village Guard, Foot Soldier",,,,,FALSE,BWG,FALSE
+Veteran,Man,Soldier,712,8,20,,"Outcast, Noble Court",0,5,"Soldier-wise, Soldiering, Campaign History, Tactics",2,"Stubborn, Maimed",,,"Sergeant, Sergeant-at-Arms, Knight, Military Order, Freebooter",,,,,FALSE,BWG,FALSE
+Cavalryman,Man,Soldier,713,4,9,P,"Villager, Servitude, Noble Court",0,10,"Riding, [T] Mounted Combat Training, [T] Armor Training, [T] Shield Training, Appropriate Weapons, Horse-wise, Haggling",1,,,,Horse LP,,,,,FALSE,BWG,FALSE
+Journeyman,Man,Soldier,714,5,15,M/P,"Villager, Peasant, Outcast",0,5,"Blacksmith, Appraisal, Haggling, Ridiculous Request-wise",1,,,,Apprentice,,,,,FALSE,BWG,FALSE
+Armorer,Man,Soldier,715,8,20,M,"City, Villager, Outcast",0,9,"Mending, Blacksmith, Armorer, Weaponsmith, Etching, Tanner",1,,,,Journeyman,,,,,FALSE,BWG,FALSE
+Atilliator,Man,Soldier,716,10,22,P,"Noble Court, City, Outcast",0,6,"Atilliator, Carpentry, Carving, Blacksmith, Tanner",1,,,,Journeyman,,,,,FALSE,BWG,FALSE
+Chaplain,Man,Soldier,717,5,15,M/P,"Outcast, City, Seafaring, Court, Religious",0,5,"Oratory, Riding, [T] Armor Training, [T] Mounted Combat Training, Appropriate Weapons",1,"Ideologue, Psychotic",,,"Priest LP, Military Order",,,,,FALSE,BWG,FALSE
+Engineer,Man,Soldier,718,5,18,M,"City, Court, Outcast",0,6,"Artillerist, Engineer, Fortifications",1,"Smart, Sense of Distance",,,"Student, Engineer, Mining Engineer, Artillerist's Hand",,,,,FALSE,BWG,FALSE
+Wizard of War,Man,Soldier,719,4,20,M,"City, Court, Outcast",0,7,"Sorcery, Strategy Games, Soldier-wise, War-wise, Haggling, Cartography",1,Arrogant,,,"Neophyte Sorcerer, Arcane Devotee, Weather Witch, Rogue Wizard, Mad Summoner",,,,,FALSE,BWG,FALSE
+Quartermaster,Man,Soldier,720,5,17,M,"Villager, City, Noble Court",0,6,"Administration, Accounting, Haggling, Logistics",1,Light Sleeper,,,"Sergeant, Veteran, Steward, Sea Captain, Captain of the Guard, Merchant, Man-at-Arms, Smuggler, Constable, Lord",,,,,FALSE,BWG,FALSE
+Captain,Man,Soldier,721,6,35,M+P,"Peasant, Villager, City, Noble, Noble Court, Seafaring, Servitude, Outcast, Religious",0,9,"Command, Contract-wise, Haggling, Oratory, Appropriate Weapons, Field Dressing, Riding, Strategy",2,Savvy,,,"Captain of the Guard, Knight, Lord, Constable",,,or TWO Freebooter,,FALSE,BWG,FALSE
+Son of a Gun,Man,Seafaring,801,8,3,,"Servitude, Soldier, Outcast",3,0,,2,Sea Legs,,,,,,,,TRUE,BWG,FALSE
+Boy,Man,Seafaring,802,4,8,,"City, Servitude, Soldier, Outcast",0,4,"Sailor-wise, Ship-wise, Captain-wise",1,"Veneer of Obedience, Curses like a Sailor, Sprinter",,,,1!,,,,FALSE,BWG,FALSE
+Galley Slave,Man,Seafaring,803,6,3,,"Servitude, Soldier, Outcast",0,3,"Slave Deck-wise, Taskmaster-wise, Sing, Seamanship, Knots",3,"Tasting the Lash, Eating Maggots, Following the Beat, Iron Stomach, Bottomless Stomach, Gnawing Hunger",,,,,,,,FALSE,BWG,FALSE
+Ratcatcher,Man,Seafaring,804,6,4,,"Outcast, Servitude, City",0,5,"Trapper, Poisons, Ratiquette",3,"Bilge-Drinker, Rat-Speak, Feral",,,,,,,,FALSE,BWG,FALSE
+Landsman,Man,Seafaring,805,4,5,,"Servitude, Soldier, Outcast",0,3,"Seamanship, Knots, Brawling, Rope-wise",1,"Cursing, Aches and Pains",,,,,,,,FALSE,BWG,FALSE
+Drummer,Man,Seafaring,806,5,6,,"Soldier, City, Villager, Outcast",0,3,"Drum, Sing, Drum Maker",2,Incessant Tapping,,,,,,,,FALSE,BWG,FALSE
+Sailor,Man,Seafaring,807,5,7,P,"Servitude, Soldier, City, Outcast",0,6,"Seamanship, Rigging, Knots, Brawling, Sing, Sea-wise, Gambling",2,Drunk,,,,,,,,FALSE,BWG,FALSE
+Crazy Old Sailor,Man,Seafaring,808,10,8,M,"Servitude, Outcast",0,3,"Ugly Truth, Intimidation, Omen-wise",3,"Superstitious, Metal Plate in the Skull, ""He's a Jonah that one.""",,,"Sailor, Pirate, Mercenary Captain",,40,both requirements needed,,FALSE,BWG,FALSE
+Purser,Man,Seafaring,809,4,9,,"Servitude, Soldier",0,4,"Accounting, Crew-wise, Supply-wise, Ship-wise",2,"Gnawing Hunger, Bitter",,,"Clerk, Student, Sailor",,,,,FALSE,BWG,FALSE
+Signalman,Man,Seafaring,810,5,8,M,"Servitude, Soldier",0,5,"Signaling, Observation, Cryptography",1,Cryptic,,,,,,,,FALSE,BWG,FALSE
+Pilot,Man,Seafaring,811,4,8,,"Soldier, City, Villager, Outcast",0,5,"Pilot, Ship-wise, Observation, Shoal-wise",2,"Blisters, Light Sleeper, Bored, Paranoid about the Ship",,,"Sailor, Pirate, Mercenary Captain",,,,,FALSE,BWG,FALSE
+Marine,Man,Seafaring,812,4,10,P,"Soldier, City, Villager, Outcast",0,4,"Appropriate Weapons, Knots, Intimindation",1,"Bruiser, Sea Legs",,,"Sailor, Pirate, Mercenary Captain",,,,,FALSE,BWG,FALSE
+Bosun,Man,Seafaring,813,5,8,,"Soldier, City, Villager, Outcast",0,3,"Initimidation, Brawling, Sailor-wise",1,"Mean, Obedient",,,"Sailor, Pirate, Mercenary Captain",,,,,FALSE,BWG,FALSE
+Sailmaker,Man,Seafaring,814,5,9,P,"Soldier, City, Villager, Outcast",0,5,"Sewing, Weaving, Mending, Sail-wise",1,,,,"Sailor, Pirate, Seamstress",,,,,FALSE,BWG,FALSE
+Ship's Doctor,Man,Seafaring,815,6,15,M,"Soldier, City, Villager, Outcast",0,8,"Apothecary, Bloodletting, Surgery, Anatomy, Astrology, Falsehood, Tar-wise, Scurvy-wise",3,"Incomprehensible Diagnosis, Ugly Reputation",,,"Doctor, Court Doctor, Physician, Barber, Student",,,,,FALSE,BWG,FALSE
+Ship's Cook,Man,Seafaring,816,5,10,M,"Soldier, City, Villager, Outcast",0,6,"Cooking, Firebuilding, Sing, Falsehood, Mystery Meat-wise",3,"Crippled, Cookie, Maggot Connoisseur",,,"Sailor, Pirate",,,,,FALSE,BWG,FALSE
+Ship's Chaplain,Man,Seafaring,817,5,15,,"Villager, City, Religious, Soldier",0,4,"Oratory, Doctrine, Ship-wise",2,"World Weary, Burial at Sea, Secretly Worships the Black Sea God",,,"Chaplain, Military Order, Temple Acolyte, Religious Acolyte",,,,,FALSE,BWG,FALSE
+Weather Witch,Man,Seafaring,818,6,20,M/P,"Servitude, City, Villager, Outcast",0,6,"Sea-wise, Summoning, Spirit Binding, Superstition-wise, Navigation, Astrology",2,Weather Sense,,,"Augur, Neophyte Sorcerer, Arcane Devotee, Rogue Wizard",,,,,FALSE,BWG,FALSE
+Navigator,Man,Seafaring,819,6,15,M,"Soldier, City, Servitude, Outcast",0,6,"Navigation, Sea-wise, Catography, Astrology, Current-wise",1,,,,"Pilot, Mercenary Captain, Sailor, Student",,,,,FALSE,BWG,FALSE
+Carpenter's Mate,Man,Seafaring,820,6,8,P,"Soldier, Servitude, Villager, Outcast",0,3,"Mending, Gambling, Wood-wise",1,"Cursing, Bull's-eye Spitter",,,,,,,,FALSE,BWG,FALSE
+Ship's Carpenter,Man,Seafaring,821,4,16,P,"Soldier, City, Servitude, Outcast",0,5,"Carpentry, Shipwright, Boatwright, Ship-wise",1,I Know This Ship Like My Own Hands,,,"Apprentice, Carpenter's Mate",,,,,FALSE,BWG,FALSE
+Artillertist's Mate,Man,Seafaring,822,4,8,M,"Soldier, City, Servitude, Outcast",0,4,"Mending, Carpentry, Artillerist",1,Disturbingly Confident,,,,,,,,FALSE,BWG,FALSE
+Engineer,Man,Seafaring,823,4,25,M,"Soldier, City, Servitude, Outcast",0,6,"Engineer, Munitions, Artillerist, Carpentry, Mending",1,It Just Might WOrk!,,,"Artillerist's Mate, Student, Ship's Carpenter, Engineer, Journeyman",,,,,FALSE,BWG,FALSE
+Officer's Mate,Man,Seafaring,824,4,10,M/P,"Servitude, Outcast, Soldier, City",0,4,"Etiquette, Captain-wise, Seamanship",3,Pegboy,,,"Born Noble, Page, Son of a Gun",1,,"both requirements needed, but can be THIRD if Page was SECOND",,FALSE,BWG,FALSE
+Steward,Man,Seafaring,825,6,20,M,"Soldier, City, Servitude, Outcast",0,5,"Accounting, Ship Management, Haggling, Merchant-wise, Appraisal",1,,,,"Purser, Merchant, Steward, Accountant",,,,,FALSE,BWG,FALSE
+First Mate,Man,Seafaring,826,6,18,M,"Soldier, City, Servitude, Outcast",0,6,"Intimidation, Command, Conspicuous, Seaman-wise, Sword",1,,,,"Knight, 2 Seafaring LPs, 2 Sailor",,,,,FALSE,BWG,FALSE
+Sea Captain,Man,Seafaring,827,7,30,M,"Peasant, Villager, City, Noble Court, Soldier, Religious, Servitude, Outcast",2,6,"Command, Oratory, Ship-wise, Sea-wise",2,Stern Demeanour,,,"First Mate, Knight, Military Order, 2 Mercenary Captain",,,,,FALSE,BWG,FALSE
+Born Slave,Man,Servitude,901,12,5,-M/P,"Soldier, Outcast",2,1,Slavery-wise,3,"Broken, Scarred, Maimed, Lame",,,,,,,,TRUE,BWG,FALSE
+Ditch Digger,Man,Servitude,902,4,4,,"Soldier, Outcast",0,3,"Ditch Digging, Sing, Boss-wise",2,"Blisters, Back-Breaking Labor",,,,,,,,FALSE,BWG,FALSE
+Servant,Man,Servitude,903,5,6,,"Outcast, Soldier, City, Noble Court",0,2,"Soothing Platitudes, Gossip-wise",2,"Mind-Numbing Work, Osequious",,,,,,,,FALSE,BWG,FALSE
+Field Laborer,Man,Servitude,904,6,5,,"Outcast, Soldier",0,7,"Farming, Mending, Sing, Hauling, Driving, Fall Grass-wise",3,Hope,,,,,,,,FALSE,BWG,FALSE
+Captive of War,Man,Servitude,905,4,4,,"Outcast, Soldier, City",0,2,"Cell-wise, Chain-wise",2,"Claustrophobic, Resigned to Fate",,,,,,,,FALSE,BWG,FALSE
+Gaol,Man,Servitude,906,3,3,,"Outcast, Soldier, City",0,3,"Gaol-wise, Ratiquette",2,Involuntary Shudders,,,,,,,,FALSE,BWG,FALSE
+Harem Slave,Man,Servitude,907,5,4,,Outcast,0,3,"Falsehood, Seduction",2,"Numb, Worldly",,,,,,,,FALSE,BWG,FALSE
+Bondsman,Man,Servitude,908,7,7,,"Peasant, Soldier, Outcast",0,0,,2,Lucky,,,,,,,Master's Skills with 1/4 points,FALSE,BWG,FALSE
+Urchin,Man,Outcast,1001,4,3,,"Peasant, Soldier, Servitude",0,4,"Inconspicuous, Streetwise, Sleight of Hand",2,"Addicted, The Story",,,,1!,,,,FALSE,BWG,FALSE
+Apostate,Man,Outcast,1002,3,6,,"City, Soldier, Religious",0,4,"Doctrine, Heretical Doctrine, Foreign Doctrine",1,Apostate,,,,,,,,FALSE,BWG,FALSE
+Blackmailer,Man,Outcast,1003,3,10,M,"City, Soldier, Villager, Seafaring",0,4,"Extortion, Forgery, Ugly Truth, Falsehood, Bribe-wise",2,Cold Hearted,,,,,,,,FALSE,BWG,FALSE
+Kidnapper,Man,Outcast,1004,3,10,M,"City, Soldier, Villager, Seafaring",0,5,"Interrogation, Torture, Intimidation, Ransom-wise",2,Hard Hearted,,,,,,,,FALSE,BWG,FALSE
+Pillager,Man,Outcast,1005,4,7,,"Soldier, City, Servitude, Seafaring",0,4,"Scavenging, Foraging, Army-wise, Battle-wise, Haggling",1,,,,,,,,,FALSE,BWG,FALSE
+Vagrant,Man,Outcast,1006,3,5,,"City, Soldier, Servitude",0,4,"Road-wise, Hostel-wise, Hospital-wise, Inconspicuous",2,,,,,,,,,FALSE,BWG,FALSE
+Cripple,Man,Outcast,1007,6,3,,"Servitude, City",0,6,"Begging, Inconspicuous, Conspicuous",2,"Lame, Missing Limb",,,,,,,choose 1st Trait,FALSE,BWG,FALSE
+Poacher,Man,Outcast,1008,5,5,M/P,"Servitude, Soldier, Villager",0,6,"Royal Parks-wise, Hunting, Stealthy, Tracking, Orienteering",1,,,,,,,,,FALSE,BWG,FALSE
+Deranged,Man,Outcast,1009,6,3,,Servitude,0,3,"Inconspicuous, Quack-wise",2,"Sick, Phobia, Lunatic, Linguist, Possessed",,,,,,,,FALSE,BWG,FALSE
+Outlaw,Man,Outcast,1010,4,5,M/P,"Soldier, City, Villager, Peasant, Seafaring",0,5,"Authority-wise, Inconspicuous, Conspicuous",1,Outlaw,,,,,,,,FALSE,BWG,FALSE
+Fence,Man,Outcast,1011,6,15,M/P,"Servitude, City, Soldier",0,6,"Appraisal, Haggling, Inconspicuous, Streetwise, Guard-wise",2,Shrewd,,,"Shopkeeper, Barkeep, Moneylender, Outcast LP, Criminal LP",,,,,FALSE,BWG,FALSE
+Gravedigger,Man,Outcast,1012,5,4,,"Soldier, Servitude",0,6,"Ditch Digging, Philosophy, Grave-wise, Cemetery-wise, Bone-wise",3,Bitter,,,,,,,,FALSE,BWG,FALSE
+Ratcatcher,Man,Outcast,1013,5,4,,Rats,0,4,"Trapper, Poisons, Ratiquette",2,"Diseased, Rat-Speak",,,,,,,,FALSE,BWG,FALSE
+Beggar,Man,Outcast,1014,3,5,,"Peasant, Soldier, Villager",0,5,"Inconspicuous, Conspicuous, Streetwise, Falsehood",2,The Story,,,,,,,,FALSE,BWG,FALSE
+Leper,Man,Outcast,1015,4,3,-P,"Servitude, Peasant",0,5,"Inconspicuous, Hospital-wise, Priest-wise, Pilgrim-wise",3,"Leprosy, Unbeliever, White-Gold Wielder",,,,,,,,FALSE,BWG,FALSE
+Prostitute,Man,Outcast,1016,5,6,,"Peasant, Villager, City, Servitude",0,3,"Conspicuous, Inconspicuous, Persuasion, Falsehood, Haggling, Soothing Platitudes",2,Tolerant,,,,,,,,FALSE,BWG,FALSE
+Whoremonger,Man,Outcast,1017,6,12,,"Villager, City, Soldier",0,5,"Intimidation, Haggling, Prostitute-wise, City-wise, Guard-wise",1,,,,"Corrupt Sergeant, Venal Priest, Shopkeeper, Barkeep, Moneylender, Outcast LP, Criminal LP",,,,,FALSE,BWG,FALSE
+Itinerant Performer,Man,Outcast,1018,4,5,,"Peasant, Villager, City, Soldier",0,8,"Cooking, Sewing, Acting, Sleight of Hand, Haggling, Mending, Disguise",2,Odd,,,,,,,,FALSE,BWG,FALSE
+Insurrectionist,Man,Outcast,1019,3,5,,"City, Soldier",0,4,"Philosophy, Rule of Law, Doctrine, Oratory, Arson",2,Zealot,,,,,,,,FALSE,BWG,FALSE
+Cultist,Man,Outcast,1020,4,8,,"Peasant, Servitude, Soldier",0,5,"Cult Doctrine, Inconspicuous, Conspicuous, Falsehood, Persuasion",2,"Zealot, Rabble Rouser, Speaker of the Secret Language",,,,,,,,FALSE,BWG,FALSE
+Poisoner,Man,Outcast,1021,5,8,M,"City, Villager, Noble Court",0,5,"Poisons, Cooking, Inconspicuous, Disguise",2,Off-Kilter,,,,,,,,FALSE,BWG,FALSE
+Thug,Man,Outcast,1022,4,7,,"Soldier, City",0,4,"Streetwise, Murder-wise, Guard-wise, Brawling",2,"Cold-Blooded, Jaded",,,,,,,,FALSE,BWG,FALSE
+Desperate Killer,Man,Outcast,1023,3,5,,"Soldier, City, Servitude",0,5,"Appropriate Weapons, Inconspicuous, Assassination-wise",2,"Desperate, Murderous, Cold Hearted, Hard Hearted",,,,,,,,FALSE,BWG,FALSE
+Bandit,Man,Outcast,1024,3,7,P,"Soldier, Peasant",0,4,"Appropriate Weapons, Intimidation, Stealthy, Caravan-wise",1,,,,,,,,,FALSE,BWG,FALSE
+Pirate,Man,Outcast,1025,4,5,,"Seafaring, City, Villager",0,6,"Pirate Cove-wise, Rigging, Knots, Knives, Sea-wise, Map-wise",2,"Problem with Authority, Scurvy, Maimed, Crippled, Lame",,,,,,,,FALSE,BWG,FALSE
+Smuggler,Man,Outcast,1026,4,15,M,"Soldier, City, Villager",0,6,"Persuasion, Falsehood, Appraisal, Law-wise, Forgery, Stealthy, Inconspicuous",2,Paranoid,,,,,,,,FALSE,BWG,FALSE
+Freebooter,Man,Outcast,1027,4,10,P,"Soldier, Peasant, Servitude",0,8,"Intimidation, Appropriate Weapons, Countryside-wise, Fortress-wise, Mercenary Company-wise, Foreign Languages, War-wise, Loot-wise, Extortion-wise",2,"Cold Blooded, Merciless",,,"Bandit, Smuggler, Squire, Knight, City Guard, Village Guard, Marine Sailor, Soldier LP",,,,,FALSE,BWG,FALSE
+Strider,Man,Outcast,1028,5,6,P,"Soldier, Peasant, Servitude",0,9,"Forest-wise, Orienteering, Foraging, Tracking, Firebuilding, Riding, Stealthy, Appropriate Weapons",2,Loner,,,"Born Noble, Hunter, Trapper, Huntsman, Scout",,,,,FALSE,BWG,FALSE
+Mad Summoner,Man,Outcast,1029,8,20,M/P,"Peasant, City, Seafaring",0,6,"Summoning, Enchanting, Demonology, Empyrealia",2,"Mad, Fear of Cheese, Fear of Wet Noises, Alarming",,,"Cultist, Augur, Neophyte Sorcerer, Arcane Devotee",,,,,FALSE,BWG,FALSE
+Rogue Wizard,Man,Outcast,1030,6,24,M+P,"Servitude, Seafaring, Religious",0,8,"Sorcery, Inconspicuous, Graveyard-wise, Astrology, Bloodletting, Ugly Truth, Apocalypse-wise, Enchanting, Alchemy",3,"Spooky, Aura of Fear, Obscure Aura",,,"Cultist, Augur, Neophyte Sorcerer, Arcane Devotee",,,,,FALSE,BWG,FALSE
+Crazy Witch,Man,Outcast,1031,6,6,M/P,"Peasant, Servitude, Villager",0,5,"Folklore, Herbalism, Poisons, Summoning, Profanity-wise",2,"A Little Crazy, Gifted, Mark of the Beast",,,"Weather Witch, Young Lady, Augur, Midwife",,,,,FALSE,BWG,FALSE
+Heretic Priest,Man,Outcast,1032,7,6,,"Peasant, Servitude",0,7,"Heretical Doctrine, Oratory, Apostate-wise, Demonology, Summoner-wise, Cultist-wise",2,"Lunatic, Overbearing Loony, Faith in Dead Gods",,,"Acolyte, Cultist, Apostate, Thelogian, Venal Priest, Interpreter, Archivist",,,,,FALSE,BWG,FALSE
+Thinker,Man,Outcast,1033,15,5,M,"Peasant, Villager, City, Noble, Noble Court, Soldier, Religious, Seafaring, Servitude",1,6,"Philosophy, Strategy, Strategy Games, Calligraphy, History, Painting",2,,,,,,36,,,FALSE,BWG,FALSE
