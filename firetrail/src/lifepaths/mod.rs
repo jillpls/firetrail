@@ -1,17 +1,48 @@
 use std::collections::HashMap;
 use std::fmt::{Display, Formatter};
+use std::hash::Hash;
 
 pub mod lp_parser;
 
 #[derive(Default)]
 pub struct Setting {
     name: String,
-    lifepaths: Vec<Lifepath>,
+    lifepaths: Vec<String>,
+}
+
+impl Setting {
+    pub fn new(name: String) -> Self {
+        Self {
+            name,
+            lifepaths: Vec::new(),
+        }
+    }
 }
 
 #[derive(Default)]
 pub struct LifepathLookup {
-    lifepaths: HashMap<String, Lifepath>,
+    lifepaths: HashMap<String, HashMap<String, Lifepath>>,
+}
+
+impl LifepathLookup {
+    pub fn add_lifepaths(&mut self, lifepath: Lifepath, setting: &str) {
+        if ! self.lifepaths.contains_key(&lifepath.name) {
+            self.lifepaths.insert(lifepath.name.clone(), HashMap::new());
+        }
+        self.lifepaths.get_mut(&lifepath.name).unwrap().insert(setting.to_string(), lifepath);
+    }
+
+    pub fn get_lifepath(&self, name: &str, setting: &str) -> Option<&Lifepath> {
+        if let Some(m) = self.lifepaths.get(name) {
+            m.get(setting)
+        } else {
+            None
+        }
+    }
+
+    pub fn lifepaths(&self) -> &HashMap<String, HashMap<String, Lifepath>> {
+        &self.lifepaths
+    }
 }
 
 pub struct StatBoost(i8, StatBoostType);

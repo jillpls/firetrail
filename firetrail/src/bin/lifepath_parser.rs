@@ -11,7 +11,9 @@ fn main() {
     }
 
     let lifepaths = read_lifepaths(Path::new(&args[0])).expect("Parsing failed.");
-    for l in lifepaths {
-        println!("{}", l);
+    for (_, m) in lifepaths.0.lifepaths() {
+        for (s, l) in m {
+            println!("{}", l);
+        }
     }
 }

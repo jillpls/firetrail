@@ -32,28 +32,34 @@ impl fmt::Display for LPPError {
 
 impl Error for LPPError {}
 
-pub fn read_lifepaths(file_path: &Path) -> Result<Vec<Lifepath>, Box<dyn Error>> {
+pub fn read_lifepaths(file_path: &Path) -> Result<(LifepathLookup, Vec<Setting>), Box<dyn Error>> {
     let file = File::open(file_path)?;
     let reader = BufReader::new(file);
 
+    let mut lifepath_lookup = LifepathLookup::default();
+
     let val: Value = serde_json::from_reader(reader)?;
-    let mut lifepaths = Vec::new();
-    if let Value::Object(map) = val {
+    let setting = if let Value::Object(map) = val {
+        let name = map["name"].as_str().ok_or(LPPError::WrongType("String".to_string(), "name".to_string()))?;
+        let mut setting = Setting::new(name.to_string());
         for (k, v) in map {
             if k.as_str() != "items" {
                 continue;
             }
             if let Value::Array(a) = v {
                 for l in a {
-                    lifepaths.push(read_lifepath(&l)?);
+                    let lifepath = read_lifepath(&l)?;
+                    setting.lifepaths.push(lifepath.name.clone());
+                    lifepath_lookup.add_lifepaths(lifepath, &setting.name);
                 }
             }
         }
+        setting
     } else {
         panic!("Unexpected input");
-    }
+    };
 
-    Ok(lifepaths)
+    Ok((lifepath_lookup, vec![setting]))
 }
 
 pub fn read_lifepath(val: &Value) -> Result<Lifepath, Box<dyn Error>> {
