@@ -4,8 +4,8 @@ use serde_json::Value;
 
 use std::alloc::LayoutError;
 use std::error::Error;
-use std::fmt::Formatter;
 use std::fmt;
+use std::fmt::Formatter;
 use std::fs::File;
 use std::io::BufReader;
 use std::path::Path;
@@ -57,9 +57,14 @@ pub fn read_lifepaths(file_path: &Path) -> Result<Vec<Lifepath>, Box<dyn Error>>
 }
 
 pub fn read_lifepath(val: &Value) -> Result<(), Box<dyn Error>> {
-    if let Value::Object(map) = val {
+    let lifepath : Option<Lifepath> = if let Value::Object(map) = val {
         let name = unwrap_string(map, "name")?;
-        let data = unwrap_or_error(map, "data")?.as_object().ok_or(LPPError::WrongType("object".to_string(), "data".to_string()))?;
+        let data = unwrap_or_error(map, "data")?
+            .as_object()
+            .ok_or(LPPError::WrongType(
+                "object".to_string(),
+                "data".to_string(),
+            ))?;
         let time = unwrap_int(data, "time")?;
         let resources = unwrap_int(data, "resources")?;
         let skill_points = unwrap_int(data, "skill_points")?;
@@ -77,30 +82,58 @@ pub fn read_lifepath(val: &Value) -> Result<(), Box<dyn Error>> {
         let skill_list = split_list(data, "skillList")?;
         let trait_list = split_list(data, "traitList")?;
         let restrictions = unwrap_string(data, "restrictions")?;
+        let restrictions = if restrictions.is_empty() {
+            None
+        } else {
+            Some(vec![Restriction::Custom(restrictions)])
+        };
         let requirements = unwrap_string(data, "requirements")?;
+        let requirements = if requirements.is_empty() {
+            None
+        } else {
+            Some(vec![Requirement::Custom(requirements)])
+        };
         let note = unwrap_string(data, "note")?;
-    }
+        let note = if note.is_empty() {
+            None
+        } else {
+            Some(vec![Note::Custom(note)])
+        };
+        Some(Lifepath::new(name, time, resources, stat_boost, leads, skill_points, general_points, trait_points, skill_list, trait_list, requirements, restrictions, note))
+    } else {
+        None
+    };
     println!("{:?}", val);
     Ok(())
 }
 
-fn unwrap_int(map: &serde_json::Map<String, Value>, key : &str) -> Result<i64, LPPError> {
+fn unwrap_int(map: &serde_json::Map<String, Value>, key: &str) -> Result<i64, LPPError> {
     let val = unwrap_or_error(map, key)?;
-    val.as_i64().ok_or(LPPError::WrongType("int".to_string(), key.to_string()))
+    val.as_i64()
+        .ok_or(LPPError::WrongType("int".to_string(), key.to_string()))
 }
 
-fn unwrap_string(map: &serde_json::Map<String, Value>, key : &str) -> Result<String, LPPError> {
+fn unwrap_string(map: &serde_json::Map<String, Value>, key: &str) -> Result<String, LPPError> {
     let val = unwrap_or_error(map, key)?;
-    Ok(val.as_str().ok_or(LPPError::WrongType("String".to_string(), key.to_string()))?.to_string())
+    Ok(val
+        .as_str()
+        .ok_or(LPPError::WrongType("String".to_string(), key.to_string()))?
+        .to_string())
 }
 
-fn unwrap_or_error<'a>(map: &'a serde_json::Map<String, Value>, key: &str) -> Result<&'a Value, LPPError> {
+fn unwrap_or_error<'a>(
+    map: &'a serde_json::Map<String, Value>,
+    key: &str,
+) -> Result<&'a Value, LPPError> {
     map.get(key).ok_or(LPPError::KeyNotFound(key.to_string()))
 }
 
-fn split_list(map: &serde_json::Map<String, Value>, key : &str) -> Result<Vec<String>, LPPError> {
+fn split_list(map: &serde_json::Map<String, Value>, key: &str) -> Result<Vec<String>, LPPError> {
     let val = unwrap_or_error(map, key)?;
-    let list = val.as_str().ok_or(LPPError::WrongType("String".to_string(), key.to_string()))?.to_string();
+    let list = val
+        .as_str()
+        .ok_or(LPPError::WrongType("String".to_string(), key.to_string()))?
+        .to_string();
     if list.is_empty() {
         return Ok(Vec::new());
     }
