@@ -1,0 +1,501 @@
+{
+  "_id": "1QPTIrPVexJkeH1i",
+  "name": "Pirate Subsetting",
+  "type": "setting",
+  "img": "icons/svg/mystery-man.svg",
+  "data": {
+    "description": ""
+  },
+  "token": {
+    "name": "Pirate Setting",
+    "img": "icons/svg/mystery-man.svg",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "scale": 1,
+    "mirrorX": false,
+    "mirrorY": false,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "vision": false,
+    "dimSight": 0,
+    "brightSight": 0,
+    "dimLight": 0,
+    "brightLight": 0,
+    "sightAngle": 0,
+    "lightAngle": 0,
+    "lightAlpha": 0.25,
+    "lightAnimation": {
+      "speed": 5,
+      "intensity": 5
+    },
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": null
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "CuZaOrfJpRSTKmCk",
+      "name": "Lad/Lass",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 3,
+        "resources": 6,
+        "statBoost": "physical",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 4,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Ship-wise, Pirating-wise, Captain-wise",
+        "traitList": "",
+        "note": "",
+        "requirements": "",
+        "restrictions": "If Lad/Lass is chosen, it must be the second lifepath taken and may only be taken once.",
+        "order": 0
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "LSVPdRb5rdqeoGkN",
+      "name": "Bilge Rat",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 4,
+        "resources": 5,
+        "statBoost": "none",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 4,
+        "generalPoints": 0,
+        "traitPoints": 3,
+        "skillList": "Seamanship, Drinking, Gambling",
+        "traitList": "Bilge-Drinker",
+        "note": "",
+        "requirements": "",
+        "restrictions": "",
+        "order": 1
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "eufgJARqYJN3N6rg",
+      "name": "Marooned",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 2,
+        "resources": 3,
+        "statBoost": "none",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 3,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Lonely Island-wise, Foraging",
+        "traitList": "Sunburnt",
+        "note": "",
+        "requirements": "",
+        "restrictions": "",
+        "order": 2
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "4Bx3GQrGNY67sQ1V",
+      "name": "Pirate",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 7,
+        "resources": 15,
+        "statBoost": "either",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 8,
+        "generalPoints": 0,
+        "traitPoints": 2,
+        "skillList": "Loot-wise, Knives, Rigging, Knots, Seamanship, Map-wise, Sea-wise",
+        "traitList": "Problems with Authority, Scurvy, Maimed, Crippled, Lame, Rapier Wit",
+        "note": "",
+        "requirements": "Sailor, Freebooter, Bilge Rat or Son of a Gun",
+        "restrictions": "",
+        "order": 3
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "ADKJGILcHnILiYMt",
+      "name": "Scallywag",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 5,
+        "resources": 20,
+        "statBoost": "none",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 6,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Falsehood, Intimidation, Extortion, Grift-wise, Knives",
+        "traitList": "Cold Hearted",
+        "note": "",
+        "requirements": "Pirate or Marooned",
+        "restrictions": "",
+        "order": 4
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "SldfpZLuhxlQqRln",
+      "name": "Corsair",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 7,
+        "resources": 12,
+        "statBoost": "physical",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 7,
+        "generalPoints": 0,
+        "traitPoints": 2,
+        "skillList": "Sword, Two-Fisted Fighting Training, Rigging, Climbing, Brawling, Slippery Ground-wise",
+        "traitList": "Dexterity of the Cat",
+        "note": "",
+        "requirements": "Pirate, Marine or Duelist",
+        "restrictions": "",
+        "order": 5
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "EqLoEc7v6qqxye86",
+      "name": "Reaver",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 5,
+        "resources": 10,
+        "statBoost": "physical",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 5,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Appropriate Weapons, Intimidation, Brawling, Murder-wise",
+        "traitList": "Reckless, Dreadful",
+        "note": "",
+        "requirements": "Pirate or Bandit",
+        "restrictions": "",
+        "order": 6
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "wioWqPC0dDHWL49g",
+      "name": "Privateer",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 4,
+        "resources": 30,
+        "statBoost": "either",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 6,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Read, Persuasion, Etiquette, Noble-wise, Appropriate Weapons",
+        "traitList": "Letter of Marque, Corrupt",
+        "note": "",
+        "requirements": "First Mate, Ship's Captain or Lord",
+        "restrictions": "",
+        "order": 11
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "LNDgZlfGvoMqDvWp",
+      "name": "Provost",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 5,
+        "resources": 15,
+        "statBoost": "mental",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 5,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Intimidation, Accounting; Interrogation, Hiding Places-wise",
+        "traitList": "Hard Hearted",
+        "note": "",
+        "requirements": "",
+        "restrictions": "May not be the character's second lifepath",
+        "order": 8
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "Edp6OJ9uPFyC7jFD",
+      "name": "Civilian Crew",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 2,
+        "resources": 10,
+        "statBoost": "none",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 3,
+        "generalPoints": 0,
+        "traitPoints": 1,
+        "skillList": "Inconspicuous, Crew-wise",
+        "traitList": "In for a Penny In for a Pound",
+        "note": "",
+        "requirements": "Ship's Carpenter, Engineer, Navigator, Ship's Doctor or Sailmaker",
+        "restrictions": "",
+        "order": 9
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "df9unuCKlyWlG641",
+      "name": "Old Seadog",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 5,
+        "resources": 5,
+        "statBoost": "none",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 4,
+        "generalPoints": 0,
+        "traitPoints": 2,
+        "skillList": "Ugly Truth, Sea-wise, Falsehood",
+        "traitList": "Resigned (to Death), Savvy",
+        "note": "",
+        "requirements": "Scallywag, Corsair or Reaver",
+        "restrictions": "",
+        "order": 10
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "4Jupuazk0mcOYUAC",
+      "name": "Pirate Captain",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 8,
+        "resources": 40,
+        "statBoost": "both",
+        "subtractStats": false,
+        "leads": "Any",
+        "skillPoints": 8,
+        "generalPoints": null,
+        "traitPoints": 2,
+        "skillList": "Intimidation, Pilot, Command, Ship-wise, Map-wise, Merchant Ship-wise, Firearms",
+        "traitList": "Outlaw",
+        "note": "",
+        "requirements": "Ship's Captain, Old Seadog or two Privateer lifepaths",
+        "restrictions": "",
+        "order": 12
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    },
+    {
+      "_id": "uhDDrdSRS7efPPTI",
+      "name": "Pirate Queen/King",
+      "type": "lifepath",
+      "img": "icons/environment/people/group.webp",
+      "data": {
+        "time": 10,
+        "resources": 100,
+        "statBoost": "both",
+        "subtractStats": false,
+        "leads": "Free Haven, Noble",
+        "skillPoints": 6,
+        "generalPoints": 3,
+        "traitPoints": 1,
+        "skillList": "Betrayal-wise, Command, Fleet-wise, Treasure-wise",
+        "traitList": "Off-Kilter, Mad, Flamboyant, Pompous",
+        "note": "",
+        "requirements": "Magnate or Lord and Pirate Captain or two Pirate Captain lifepaths",
+        "restrictions": "",
+        "order": 13
+      },
+      "effects": [],
+      "folder": "uFPiW1OZaDNIoxmX",
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "ZzlMXJhc6oiMoS13": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.z6iAGhs6lC7fG53E"
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "ZzlMXJhc6oiMoS13": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Actor.FP3Pk1QnfHjwx2h8"
+    }
+  }
+}

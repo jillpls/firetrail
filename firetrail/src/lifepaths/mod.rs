@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use crate::lifepaths::lp_parser::LifepathBuilder;
 
 pub mod lp_parser;
 
@@ -22,29 +21,36 @@ pub enum StatBoost {
     Either(i8)
 }
 
-struct Requirement {
-    str: String
+pub enum Requirement {
+    Custom(String)
 }
 
-struct Restriction {
-    str: String
+pub enum Restriction {
+    Custom(String)
 }
 
-struct Note {
-    str: String
+pub enum Note {
+    Custom(String)
+}
+
+pub enum Leads {
+    Any,
+    None,
+    Some(Vec<String>)
 }
 
 pub struct Lifepath {
+    name: String,
     time: u16,
     resources: u16,
     stat_boost: StatBoost,
-    leads: Vec<String>,
+    leads: Leads,
     skill_points: u16,
     general_points: u16,
     trait_points: u16,
     skill_list: Vec<String>,
     trait_list: Vec<String>,
-    requirements: String,
-    restrictions: String,
-    note: String,
+    requirements: Option<Vec<Requirement>>,
+    restrictions: Option<Vec<Restriction>>,
+    note: Option<Vec<Note>>,
 }
