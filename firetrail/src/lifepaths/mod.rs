@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::fmt::{Display, Formatter};
 
 pub mod lp_parser;
 
@@ -13,30 +14,88 @@ pub struct LifepathLookup {
     lifepaths: HashMap<String, Lifepath>,
 }
 
-pub enum StatBoost {
+pub struct StatBoost(i8, StatBoostType);
+
+pub enum StatBoostType {
+    Mental,
+    Physical,
+    Both,
+    Either,
     None,
-    Mental(i8),
-    Physical(i8),
-    Both(i8),
-    Either(i8),
+}
+
+impl Display for StatBoost {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        let str = match self.1 {
+            StatBoostType::Both => "M,P",
+            StatBoostType::Either => "M/P",
+            StatBoostType::Physical => "P",
+            StatBoostType::Mental => "M",
+            _ => return write!(f, "-"),
+        };
+        let sign = if self.0 < 0 { '-' } else { '+' };
+        write!(f, "{}{}{}", sign, self.0, str)
+    }
 }
 
 pub enum Requirement {
     Custom(String),
 }
 
+impl Display for Requirement {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        if let Requirement::Custom(s) = self {
+            write!(f, "{}", s.as_str())
+        } else {
+            write!(f, "")
+        }
+    }
+}
+
 pub enum Restriction {
     Custom(String),
+}
+
+impl Display for Restriction {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        if let Restriction::Custom(s) = self {
+            write!(f, "{}", s.as_str())
+        } else {
+            write!(f, "")
+        }
+    }
 }
 
 pub enum Note {
     Custom(String),
 }
 
+impl Display for Note {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        if let Note::Custom(s) = self {
+            write!(f, "{}", s.as_str())
+        } else {
+            write!(f, "")
+        }
+    }
+}
+
 pub enum Leads {
     Any,
     None,
     Some(Vec<String>),
+}
+
+impl Display for Leads {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Self::Some(leads) => {
+                write!(f, "{}", format_list(leads))
+            }
+            Self::Any => write!(f, "Any"),
+            _ => write!(f, ""),
+        }
+    }
 }
 
 pub struct Lifepath {
@@ -69,7 +128,7 @@ impl Lifepath {
         trait_list: Vec<String>,
         requirements: Option<Vec<Requirement>>,
         restrictions: Option<Vec<Restriction>>,
-        note: Option<Vec<Note>>
+        note: Option<Vec<Note>>,
     ) -> Self {
         Self {
             name,
@@ -84,7 +143,82 @@ impl Lifepath {
             trait_list,
             requirements,
             restrictions,
-            note
+            note,
         }
+    }
+}
+
+impl std::fmt::Display for Lifepath {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        let row1 = format!(
+            "{}   {} yrs  {} res  {}  {}\n",
+            self.name, self.time, self.resources, self.stat_boost, self.leads
+        );
+        let general = if self.general_points > 0 {
+            format!(
+                "{}{}: General; ",
+                self.general_points,
+                pt_pts(self.general_points)
+            )
+        } else {
+            String::new()
+        };
+        let skills = format!(
+            "{}{}: {}",
+            self.skill_points,
+            pt_pts(self.skill_points),
+            format_list(&self.skill_list)
+        );
+        let traits = if self.trait_points > 0 {
+            format!(
+                "{}{}: {}",
+                self.trait_points,
+                pt_pts(self.trait_points),
+                format_list(&self.trait_list)
+            )
+        } else {
+            "-".to_string()
+        };
+        let row2 = format!("Skills: {}{}\n", general, skills);
+        let row3 = format!("Traits: {}\n", traits);
+        let requirements = if let Some(r) = &self.requirements {
+            format!("Requirements: {}\n", format_list(r))
+        } else {
+            String::new()
+        };
+        let restrictions = if let Some(r) = &self.restrictions {
+            format!("Restrictions: {}\n", format_list(r))
+        } else {
+            String::new()
+        };
+        let note = if let Some(r) = &self.note {
+            format!("Notes: {}\n", format_list(r))
+        } else {
+            String::new()
+        };
+        let special = format!("{}{}{}", requirements, restrictions, note);
+        write!(f, "{}{}{}{}", row1, row2, row3, special)
+    }
+}
+
+fn format_list<T: Display>(list: &Vec<T>) -> String {
+    if list.is_empty() {
+        return String::new();
+    }
+    let mut list_str = String::from("");
+    for l in list {
+        list_str.push_str(format!("{}", l).as_str());
+        list_str.push_str(", ");
+    }
+
+    let list_str = list_str.trim().trim_matches(',');
+    format!("{}", list_str)
+}
+
+fn pt_pts(i: i64) -> String {
+    if i > 1 {
+        "pts".to_string()
+    } else {
+        "pt".to_string()
     }
 }

@@ -1,9 +1,8 @@
-use std::env;
 use firetrail::lifepaths::lp_parser::read_lifepaths;
+use std::env;
 use std::path::Path;
 
 fn main() {
-
     let args: Vec<String> = env::args().collect();
     let args = &args[1..];
 
@@ -11,5 +10,8 @@ fn main() {
         panic!("No file path provided.");
     }
 
-    let r = read_lifepaths(Path::new(&args[0]));
+    let lifepaths = read_lifepaths(Path::new(&args[0])).expect("Parsing failed.");
+    for l in lifepaths {
+        println!("{}", l);
+    }
 }
