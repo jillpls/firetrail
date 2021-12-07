@@ -1,6 +1,6 @@
 use crate::lifepaths::*;
 use serde::Deserialize;
-use serde_json::Value;
+use serde_json::{Number, Value};
 
 use std::alloc::LayoutError;
 use std::any::Any;
@@ -8,61 +8,92 @@ use std::error::Error;
 use std::fmt;
 use std::fmt::Formatter;
 use std::fs::File;
-use std::io::BufReader;
+use std::io::{BufRead, BufReader};
 use std::path::Path;
 
-#[derive(Debug)]
-pub enum LPPError {
-    KeyNotFound(String),
-    WrongType(String, String),
-}
-
-impl fmt::Display for LPPError {
-    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
-        match self {
-            Self::KeyNotFound(s) => {
-                write!(f, "Key not found: {}", s)
-            }
-            Self::WrongType(s, t) => {
-                write!(f, "Wrong type, expected {} for {}", s, t)
-            }
-        }
+pub fn parse_settings(
+    reader: BufReader<File>,
+    lifepath_lookup: &mut LifepathLookup,
+) -> Result<Vec<Setting>, LPPError> {
+    let mut settings = Vec::new();
+    for line in reader.lines() {
+        let line = line.unwrap();
+        settings.push(read_setting(lifepath_lookup, &line)?);
     }
+    Ok(settings)
 }
 
-impl Error for LPPError {}
+pub fn read_setting(
+    lifepath_lookup: &mut LifepathLookup,
+    setting_str: &str,
+) -> Result<Setting, LPPError> {
+    let val: Value = serde_json::from_str(setting_str).or(Err(LPPError::Unknown))?;
 
-pub fn read_lifepaths(file_path: &Path) -> Result<(LifepathLookup, Vec<Setting>), Box<dyn Error>> {
-    let file = File::open(file_path)?;
-    let reader = BufReader::new(file);
-
-    let mut lifepath_lookup = LifepathLookup::default();
-
-    let val: Value = serde_json::from_reader(reader)?;
     let setting = if let Value::Object(map) = val {
-        let name = map["name"].as_str().ok_or(LPPError::WrongType("String".to_string(), "name".to_string()))?;
+        let name = {
+            map["name"]
+                .as_str()
+                .ok_or(LPPError::WrongType(
+                    "String".to_string(),
+                    "name".to_string(),
+                ))?
+                .clone()
+        };
+        println!("\n{}", name);
         let mut setting = Setting::new(name.to_string());
         for (k, v) in map {
             if k.as_str() != "items" {
                 continue;
             }
             if let Value::Array(a) = v {
+                let mut a = a.clone();
+                a.sort_by(|l, m| {
+                    let order_l = extract_order(l).unwrap_or(i64::MAX);
+                    let order_m = extract_order(m).unwrap_or(i64::MAX);
+                    order_l.cmp(&order_m)
+                });
                 for l in a {
+                    println!(
+                        "{}",
+                        &l.as_object()
+                            .unwrap()
+                            .get("name")
+                            .unwrap()
+                            .as_str()
+                            .unwrap()
+                    );
                     let lifepath = read_lifepath(&l)?;
                     setting.lifepaths.push(lifepath.name.clone());
                     lifepath_lookup.add_lifepaths(lifepath, &setting.name);
                 }
             }
         }
+        println!("\n");
         setting
     } else {
         panic!("Unexpected input");
     };
 
-    Ok((lifepath_lookup, vec![setting]))
+    Ok(setting)
 }
 
-pub fn read_lifepath(val: &Value) -> Result<Lifepath, Box<dyn Error>> {
+fn extract_order(val: &Value) -> Result<i64, LPPError> {
+    val.as_object()
+        .ok_or(LPPError::WrongType("object".to_string(), String::new()))?
+        .get("data")
+        .ok_or(LPPError::KeyNotFound("data".to_string()))?
+        .as_object()
+        .ok_or(LPPError::WrongType(
+            "object".to_string(),
+            "order".to_string(),
+        ))?
+        .get("order")
+        .ok_or(LPPError::KeyNotFound("order".to_string()))?
+        .as_i64()
+        .ok_or(LPPError::WrongType("int".to_string(), "order".to_string()))
+}
+
+pub fn read_lifepath(val: &Value) -> Result<Lifepath, LPPError> {
     let lifepath: Option<Lifepath> = if let Value::Object(map) = val {
         let name = unwrap_string(map, "name")?;
         let data = unwrap_or_error(map, "data")?
@@ -123,7 +154,7 @@ pub fn read_lifepath(val: &Value) -> Result<Lifepath, Box<dyn Error>> {
     } else {
         None
     };
-    lifepath.ok_or(Box::from("oof".to_string()))
+    lifepath.ok_or(LPPError::Unknown)
 }
 
 fn unwrap_int(map: &serde_json::Map<String, Value>, key: &str) -> Result<i64, LPPError> {
@@ -163,17 +194,23 @@ fn split_list(map: &serde_json::Map<String, Value>, key: &str) -> Result<Vec<Str
     Ok(list)
 }
 
-fn get_stat_boost(map: &serde_json::Map<String, Value>) -> Result<StatBoost, Box<dyn Error>> {
+fn get_stat_boost(map: &serde_json::Map<String, Value>) -> Result<StatBoost, LPPError> {
     let subtract = map
         .get("subtractStats")
-        .ok_or("Unexpected Input")?
+        .ok_or(LPPError::KeyNotFound("subtractStats".to_string()))?
         .as_bool()
-        .ok_or("Unexpected Input")?;
+        .ok_or(LPPError::WrongType(
+            "bool".to_string(),
+            "subtractStats".to_string(),
+        ))?;
     let stat = map
         .get("statBoost")
-        .ok_or("Unexpected Input")?
+        .ok_or(LPPError::KeyNotFound("statBoost".to_string()))?
         .as_str()
-        .ok_or("Unexpected Input")?;
+        .ok_or(LPPError::WrongType(
+            "String".to_string(),
+            "statBoost".to_string(),
+        ))?;
     let bonus = if subtract { -1 } else { 1 };
     let stat = match stat {
         "physical" => StatBoost(bonus, StatBoostType::Physical),
@@ -185,3 +222,28 @@ fn get_stat_boost(map: &serde_json::Map<String, Value>) -> Result<StatBoost, Box
 
     Ok(stat)
 }
+
+#[derive(Debug)]
+pub enum LPPError {
+    KeyNotFound(String),
+    WrongType(String, String),
+    Unknown,
+}
+
+impl fmt::Display for LPPError {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        match self {
+            Self::KeyNotFound(s) => {
+                write!(f, "Key not found: {}", s)
+            }
+            Self::WrongType(s, t) => {
+                write!(f, "Wrong type, expected {} for {}", s, t)
+            }
+            _ => {
+                write!(f, "Unknown Error")
+            }
+        }
+    }
+}
+
+impl Error for LPPError {}

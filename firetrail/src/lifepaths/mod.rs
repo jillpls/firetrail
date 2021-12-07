@@ -19,6 +19,17 @@ impl Setting {
     }
 }
 
+impl Display for Setting {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        let mut result_str = String::from(format!("{}\n", self.name));
+        for l in &self.lifepaths {
+            result_str.push_str(l);
+            result_str.push_str(", ");
+        }
+        write!(f, "{}", result_str.trim().trim_matches(','))
+    }
+}
+
 #[derive(Default)]
 pub struct LifepathLookup {
     lifepaths: HashMap<String, HashMap<String, Lifepath>>,
@@ -26,10 +37,13 @@ pub struct LifepathLookup {
 
 impl LifepathLookup {
     pub fn add_lifepaths(&mut self, lifepath: Lifepath, setting: &str) {
-        if ! self.lifepaths.contains_key(&lifepath.name) {
+        if !self.lifepaths.contains_key(&lifepath.name) {
             self.lifepaths.insert(lifepath.name.clone(), HashMap::new());
         }
-        self.lifepaths.get_mut(&lifepath.name).unwrap().insert(setting.to_string(), lifepath);
+        self.lifepaths
+            .get_mut(&lifepath.name)
+            .unwrap()
+            .insert(setting.to_string(), lifepath);
     }
 
     pub fn get_lifepath(&self, name: &str, setting: &str) -> Option<&Lifepath> {
@@ -42,6 +56,19 @@ impl LifepathLookup {
 
     pub fn lifepaths(&self) -> &HashMap<String, HashMap<String, Lifepath>> {
         &self.lifepaths
+    }
+}
+
+impl Display for LifepathLookup {
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
+        let mut result_str = String::new();
+        for (_, m) in &self.lifepaths {
+            for (s, l) in m {
+                result_str.push_str(&format!("{}", l));
+                result_str.push_str("\n");
+            }
+        }
+        write!(f, "{}", result_str.trim().trim_matches(','))
     }
 }
 

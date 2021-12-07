@@ -1,5 +1,8 @@
-use firetrail::lifepaths::lp_parser::read_lifepaths;
+use firetrail::lifepaths::lp_parser::{parse_settings, read_setting};
+use firetrail::lifepaths::LifepathLookup;
 use std::env;
+use std::fs::File;
+use std::io::BufReader;
 use std::path::Path;
 
 fn main() {
@@ -10,10 +13,21 @@ fn main() {
         panic!("No file path provided.");
     }
 
-    let lifepaths = read_lifepaths(Path::new(&args[0])).expect("Parsing failed.");
-    for (_, m) in lifepaths.0.lifepaths() {
-        for (s, l) in m {
-            println!("{}", l);
-        }
+    let mut lifepath_lookup = LifepathLookup::default();
+
+    let file = File::open(&args[0]).unwrap();
+    let reader = BufReader::new(file);
+
+    let settings = parse_settings(reader, &mut lifepath_lookup);
+
+    if let Err(e) = settings {
+        println!("{}", e);
+        return;
+    }
+
+    let settings = settings.unwrap();
+
+    for s in settings {
+        println!("{}\n", s);
     }
 }
